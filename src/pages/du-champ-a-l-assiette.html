@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/css/normalize.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -16,9 +16,9 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="src/img/logo-online-bio.png"
+      href="../img/logo-online-bio.png"
     />
-    <title>Online Bio</title>
+    <title>Du champ à l'assiette</title>
   </head>
   <body>
     <main>
@@ -28,7 +28,7 @@
           <!-- Menu sur pc -->
           <div id="top-pc">
             <div class="logo-top">
-              <img src="src/img/logo-online-bio.png" alt="logo online bio" />
+              <img src="../img/logo-online-bio.png" alt="logo online bio" />
             </div>
             <ul class="list-pc">
               <li><a href="#valeurs">Nos valeurs</a></li>
@@ -39,10 +39,12 @@
               <i class="fas fa-search"></i>
             </div>
             <div id="menu-burger">
-              <img src="src/img/Menu-burger.svg" alt="logo menu burger" />
+              <img src="../img/Menu-burger.svg" alt="logo menu burger" />
             </div>
           </div>
+
           <!-- défilement du menu sur mobile/tablette -->
+
           <div class="top-mobile">
             <ul class="list-mobile">
               <li><a href="#valeurs">Nos valeurs</a></li>
@@ -52,12 +54,34 @@
           </div>
         </nav>
       </header>
+      <div class="article-newletter">
+        <div class="text-newsletter">
+          <h2>Inscription à la Newsletter</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            dignissimos deserunt incidunt voluptate consequatur, sequi minima
+            illo praesentium laboriosam sed excepturi tempore? Illum qui ipsa
+            nulla tempora itaque molestias quia.
+          </p>
+        </div>
+        <form>
+          <input
+            type="email"
+            placeholder="Email Adress"
+            src="../img/icon-error.svg"
+          />
+          <button>
+            <img src="../img/icon-arrow.svg" alt="arrow" />
+          </button>
+          <p><small>Entrez une adresse mail valide</small></p>
+        </form>
+      </div>
     </main>
     <!-- Footer -->
     <footer>
       <div class="top-footer">
         <div class="contact-footer">
-          <img src="src/img/logo-online-bio.png" alt="logo online bio" />
+          <img src="../img/logo-online-bio.png" alt="logo online bio" />
           <p>06.09.39.90.09</p>
           <p>onlinebio.contact@gmail.com</p>
         </div>
@@ -81,6 +105,7 @@
         </div>
       </div>
     </footer>
-    <script src="src/js/index.js"></script>
+
+    <script src="../js/index.js"></script>
   </body>
 </html>

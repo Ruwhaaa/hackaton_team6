@@ -1,3 +1,9 @@
+/*================*/
+/*====HOMEPAGE====*/
+/*================*/
+
+/*======================================================================*/
+
 /*==============*/
 /*====GLOBAL====*/
 /*==============*/
@@ -131,6 +137,7 @@ footer {
   font-size: 1.3rem;
   color: #60b100;
 }
+
 .fcb-insta .fa-facebook-f {
   font-size: 1.1rem;
 }
@@ -144,8 +151,10 @@ footer {
 /*=====================*/
 @media screen and (max-width: 768px) {
   /* header */
+
   #menu-burger {
     display: block;
+    margin-right: 1.5rem;
   }
   #top-pc {
     display: flex;
@@ -210,7 +219,7 @@ footer {
     display: block;
   }
 
-  /* footer */
+  /*=====footer=======*/
 
   .top-footer {
     display: flex;
@@ -260,6 +269,10 @@ footer {
 /*===================*/
 
 @media screen and (max-width: 390px) {
+  #menu-burger {
+    display: block;
+    margin-right: 0;
+  }
   #top-pc {
     display: flex;
     width: 100%;
@@ -322,11 +335,8 @@ footer {
   /* footer */
 
   .top-footer {
-    display: flex;
-    line-height: 2rem;
-    color: #7a7a7a;
-    width: 100%;
-    padding-left: 2.5rem;
+    width: 30rem;
+    padding-left: 2rem;
   }
 
   .nav-footer {
@@ -356,5 +366,88 @@ footer {
 
   .fcb-insta .fa-facebook-f {
     font-size: 1.1rem;
+  }
+}
+
+/*==================================================================*/
+
+/*==============================*/
+/*=====Du champ à l'assiette====*/
+/*==============================*/
+
+/*====================*/
+/*=====NEWSLETTER=====*/
+/*====================*/
+
+.text-newsletter h2 {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 390px) {
+  form {
+    position: relative;
+    width: 80%;
+  }
+
+  input {
+    background-color: transparent;
+    border: 1px solid #7a7a7a;
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input:focus {
+    border-width: 2px;
+    outline: none;
+    box-shadow: 0px 0px 10px #f8ebb9;
+  }
+
+  input::placeholder {
+    color: #7a7a7a;
+  }
+
+  form.error input {
+    border: 2px solid #f8ebb9;
+  }
+
+  .error-icon {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 110px;
+  }
+
+  button {
+    background-image: linear-gradient(135deg, #e9d792, #f8ebb9);
+    padding: 13px;
+    border-radius: 50px;
+    width: 90px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+    transition: opacity 0.2s ease;
+  }
+
+  form.error .error-icon {
+    display: block;
+  }
+
+  small {
+    display: none;
+    margin-top: 15px;
+    margin-left: 30px;
+    color: #60b100;
+  }
+
+  form.error small {
+    display: block;
+  }
+
+  button:hover {
+    opacity: 0.6;
   }
 }
