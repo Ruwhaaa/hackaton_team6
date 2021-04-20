@@ -60,7 +60,6 @@ body {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    position: relative;
     padding: 20px 30px 0 30px;
     color: white;
     height: 270px;

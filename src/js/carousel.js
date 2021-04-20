@@ -1,4 +1,5 @@
 const slider = document.querySelector('.carousel');
+const mediaQueryList = window.matchMedia('(max-width: 841px)');
 const touch_c = document.querySelector('.valeur_c');
 const touch_s = document.querySelector('.valeur_s');
 const touch_r = document.querySelector('.valeur_r');
@@ -7,39 +8,53 @@ let startX;
 let scrollLeft;
 
 slider.addEventListener('mousedown', e => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
+    if (mediaQueryList.matches) {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    }
 });
 
 touch_c.addEventListener('mousedown', () => {
-    touch_c.classList.toggle('show');
+    if (mediaQueryList.matches) {
+        touch_c.classList.toggle('show');
+    }
 });
 
 touch_s.addEventListener('mousedown', () => {
-    touch_s.classList.toggle('show');
+    if (mediaQueryList.matches) {
+        touch_s.classList.toggle('show');
+    }
 });
 
 touch_r.addEventListener('mousedown', () => {
-    touch_r.classList.toggle('show');
+    if (mediaQueryList.matches) {
+        touch_r.classList.toggle('show');
+    }
 });
 
 slider.addEventListener('mouseleave', _ => {
-    isDown = false;
-    slider.classList.remove('active');
+    if (mediaQueryList.matches) {
+        isDown = false;
+        slider.classList.remove('active');
+    }
 });
 
 slider.addEventListener('mouseup', _ => {
-    isDown = false;
-    slider.classList.remove('active');
+    if (mediaQueryList.matches) {
+        isDown = false;
+        slider.classList.remove('active');
+    }
 });
 
 slider.addEventListener('mousemove', e => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const SCROLL_SPEED = 3;
-    const walk = (x - startX) * SCROLL_SPEED;
-    slider.scrollLeft = scrollLeft - walk;
+    if (mediaQueryList.matches) {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const SCROLL_SPEED = 3;
+        const walk = (x - startX) * SCROLL_SPEED;
+        slider.scrollLeft = scrollLeft - walk;
+    }
 });
