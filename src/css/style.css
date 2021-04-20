@@ -2,51 +2,62 @@
 /*====HEADER====*/
 /*==============*/
 
-#menu {
+.menu {
   height: 8rem;
   width: 100%;
   margin: 0 auto;
   background-color: #f8ebb9;
-  display: flex;
-  /* position: absolute; */
 }
 
-#menu ul {
+.menu ul {
   display: flex;
   list-style-type: none;
   width: 50%;
   margin: 0 auto;
 }
 
-#menu a {
+.menu a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
 }
-#menu ul li {
+.menu ul li {
   margin: 3rem 4rem;
 }
 
 @media screen and (max-width: 390px) {
-  #menu {
-    height: 50%;
+  #top-pc {
+    display: flex;
+    width: 100%;
+    height: 8rem;
   }
-  #menu img {
+
+  .list-pc li {
+    display: none;
+  }
+
+  #top-mobile {
+    height: 22rem;
+    width: 100%;
+    background-color: #f8ebb9;
+  }
+
+  .list-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8ebb9;
+    width: 100%;
+  }
+  .menu img {
     width: 4rem;
     height: 4rem;
-    /* margin-top: 1rem; */
   }
-  #menu-burger {
-    text-align: center;
-    font-size: 2rem;
-    color: white;
-    background-color: #60b100;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 3px;
-    border-radius: 10px;
-    margin-top: 1.2rem;
+
+  #menu-burger img {
+    margin-top: 0.5rem;
+    width: 2.4rem;
+    cursor: pointer;
   }
   .loupe {
     text-align: center;
@@ -60,12 +71,12 @@
     margin-top: 1.2rem;
     margin-right: 1rem;
   }
-  #menu ul {
-    flex-direction: column;
-    margin-left: 3rem;
+
+  .menu ul li {
+    margin: 3rem 0.4rem;
   }
 
-  #menu ul li {
-    margin: 3rem 0.4rem;
+  .hide {
+    display: none;
   }
 }

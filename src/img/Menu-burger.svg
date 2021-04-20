@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Menu_burger" data-name="Menu burger" transform="translate(-351 -15)">
+    <rect id="Rectangle_32" data-name="Rectangle 32" width="40" height="40" rx="8" transform="translate(351 15)" fill="#60b100"/>
+    <line id="Ligne_39" data-name="Ligne 39" x2="22" transform="translate(360 25.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    <line id="Ligne_49" data-name="Ligne 49" x2="13" transform="translate(369 35)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    <line id="Ligne_50" data-name="Ligne 50" x2="22" transform="translate(360 45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>
