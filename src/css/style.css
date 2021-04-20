@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300vh;
+    background-color: #FFF9F9;
+}
+
+#carousel_title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 70px;
+}
+
+.carousel {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(10, 250px);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    overflow: scroll;
+    height: 350px;
+    scroll-snap-type: both mandatory;
+    margin-right: 10px;
+}
+
+.carousel > div {
+    height: 270px;
+    background-position: center;
+    background-size: cover;
+    scroll-snap-align: center;
+    border-radius: 50px;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.carotte {
+    background-image: url("../img/carottes_sable.jpg");
+
+}
+
+.salade {
+    background-image: url("../img/Salades_jeunes_pousses.jpg");
+
+}
+
+.recolte {
+    background-image: url("../img/récolte.jpg");
+
+}
+
+.valeur_c, .valeur_s, .valeur_r {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    position: relative;
+    padding: 20px 30px 0 30px;
+    color: white;
+    height: 270px;
+    width: 250px;
+    border-radius: 50px;
+    scroll-snap-align: center;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.carousel > div > div > h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.carousel > div > div > p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.carousel > div > div > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-size: 0.9rem;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: 1px solid white;
+    width: 120px;
+    height: 35px;
+}
+
+.show {
+    opacity: 1;
+
+}
+.active {
+    scroll-snap-type: unset;
+}
