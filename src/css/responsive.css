@@ -1,0 +1,40 @@
+@media (min-width: 840px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .carousel {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        overflow: visible;
+        height: 900px;
+        width: 100%;
+        scroll-snap-type: none;
+        margin: 0;
+    }
+
+    .carousel > div {
+        height: 250px;
+        width: 444px;
+        scroll-snap-align: none;
+        border-radius: 5%;
+    }
+
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .valeur_c, .valeur_s, .valeur_r {
+        padding: 20px 30px 0 30px;
+        color: white;
+        height: auto;
+        width: auto;
+        border-radius: 50px;
+        scroll-snap-align: none;
+    }
+}
