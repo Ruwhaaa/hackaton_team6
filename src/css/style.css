@@ -1,4 +1,16 @@
 /*==============*/
+/*====GLOBAL====*/
+/*==============*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff9f9;
+  font-size: 15px;
+}
+
+/*==============*/
 /*====HEADER====*/
 /*==============*/
 
@@ -11,20 +23,241 @@
 
 .menu ul {
   display: flex;
+  justify-content: center;
   list-style-type: none;
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: 4rem;
 }
 
 .menu a {
   text-decoration: none;
-  color: white;
+  color: #60b100;
   text-transform: uppercase;
   cursor: pointer;
+  font-weight: bold;
 }
+
+.menu a:hover {
+  color: white;
+}
+
 .menu ul li {
-  margin: 3rem 4rem;
+  margin: 3rem 2rem;
 }
+
+.logo-top img {
+  width: 5rem;
+  margin-left: 2rem;
+}
+
+.top-mobile {
+  display: none;
+}
+
+#top-pc {
+  width: 100%;
+  display: flex;
+}
+
+.list-pc {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#menu-burger {
+  display: none;
+}
+
+.loupe {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #60b100;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 8px;
+  border-radius: 50px;
+  margin-top: 2.2%;
+  margin-right: 1rem;
+}
+
+/*===============*/
+/*=====FOOTER====*/
+/*===============*/
+
+footer {
+  background-color: #f8ebb9;
+  font-size: 0.625rem;
+  border-top: solid 8px #60b100;
+}
+
+.top-footer {
+  display: flex;
+  line-height: 2rem;
+  color: #7a7a7a;
+  padding-left: 0;
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.contact-footer img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.nav-footer {
+  margin: 2.8rem 5rem;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+.nav-footer a:hover {
+  color: white;
+}
+
+.nav-footer ul {
+  list-style-type: none;
+  margin-left: 1rem;
+  width: 10rem;
+}
+
+.reseaux-footer {
+  text-align: center;
+}
+.fcb-insta .fab {
+  margin: 0.4rem 2rem;
+  font-size: 1.3rem;
+  color: #60b100;
+}
+.fcb-insta .fa-facebook-f {
+  font-size: 1.1rem;
+}
+
+.fcbk-insta .fab:hover {
+  color: white;
+}
+
+/*=====================*/
+/*=======Tablette======*/
+/*=====================*/
+@media screen and (max-width: 768px) {
+  /* header */
+  #menu-burger {
+    display: block;
+  }
+  #top-pc {
+    display: flex;
+    width: 100%;
+    height: 8rem;
+  }
+
+  .list-pc li {
+    display: none;
+  }
+
+  .top-mobile {
+    height: 22rem;
+    width: 100%;
+    background-color: #f8ebb9;
+  }
+
+  .list-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8ebb9;
+    width: 100%;
+    padding-right: 15%;
+    text-align: center;
+  }
+
+  .menu a:hover {
+    color: white;
+  }
+
+  .menu img {
+    margin-left: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #menu-burger img {
+    margin-top: 0.5rem;
+    margin-right: 0.5em;
+    width: 2.4rem;
+    cursor: pointer;
+  }
+
+  .loupe {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #60b100;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 8px;
+    border-radius: 50px;
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  .menu ul li {
+    margin: 2rem 10rem;
+  }
+
+  .show {
+    display: block;
+  }
+
+  /* footer */
+
+  .top-footer {
+    display: flex;
+    line-height: 2rem;
+    color: #7a7a7a;
+    width: 100%;
+    padding-left: 30%;
+  }
+
+  .nav-footer {
+    width: 10rem;
+  }
+
+  .nav-footer a {
+    text-decoration: none;
+    color: #7a7a7a;
+  }
+
+  .nav-footer a:hover {
+    color: #7a7a7a;
+  }
+
+  .nav-footer ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  .reseaux-footer {
+    text-align: center;
+  }
+  .fcb-insta .fab {
+    margin: 0.4rem 2rem;
+    font-size: 1.3rem;
+    color: #60b100;
+  }
+  .fcb-insta .fa-facebook-f {
+    font-size: 1.1rem;
+  }
+
+  .fcbk-insta .fab:hover {
+    color: white;
+  }
+}
+
+/*===================*/
+/*======Mobile=======*/
+/*===================*/
 
 @media screen and (max-width: 390px) {
   #top-pc {
@@ -37,7 +270,7 @@
     display: none;
   }
 
-  #top-mobile {
+  .top-mobile {
     height: 22rem;
     width: 100%;
     background-color: #f8ebb9;
@@ -48,17 +281,23 @@
     flex-direction: column;
     background-color: #f8ebb9;
     width: 100%;
+    padding-right: 20%;
+    text-align: center;
   }
+
   .menu img {
+    margin-left: 0.5rem;
     width: 4rem;
     height: 4rem;
   }
 
   #menu-burger img {
     margin-top: 0.5rem;
+    margin-right: 0.5em;
     width: 2.4rem;
     cursor: pointer;
   }
+
   .loupe {
     text-align: center;
     font-size: 1.5rem;
@@ -78,5 +317,44 @@
 
   .hide {
     display: none;
+  }
+
+  /* footer */
+
+  .top-footer {
+    display: flex;
+    line-height: 2rem;
+    color: #7a7a7a;
+    width: 100%;
+    padding-left: 2.5rem;
+  }
+
+  .nav-footer {
+    width: 15rem;
+    margin: 2.7rem 2rem;
+  }
+
+  .nav-footer a {
+    text-decoration: none;
+    color: #7a7a7a;
+  }
+
+  .nav-footer ul {
+    list-style-type: none;
+    margin-left: 1.5rem;
+  }
+
+  .reseaux-footer {
+    text-align: center;
+  }
+
+  .fcb-insta .fab {
+    margin: 0.4rem 2rem;
+    font-size: 1.3rem;
+    color: #60b100;
+  }
+
+  .fcb-insta .fa-facebook-f {
+    font-size: 1.1rem;
   }
 }
