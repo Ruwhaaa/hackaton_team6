@@ -73,13 +73,19 @@ body {
 #menu-burger {
   display: none;
 }
-#top-pc input {
+#top-pc form input {
   background-color: transparent;
-  border: 1px solid #7a7a7a;
-  padding: 15px 30px;
-  border-radius: 50px;
-  width: 100%;
-  font-size: 16px;
+  width: 10rem;
+  background-color: #f8ebb9;
+  border-radius: 20px;
+  padding: 0.4rem;
+  height: 2rem;
+  margin-top: 2.7em;
+  margin-right: 0.8rem;
+}
+
+#top-pc form {
+  display: flex;
 }
 
 .loupe {
@@ -91,8 +97,9 @@ body {
   height: 2.5rem;
   padding: 8px;
   border-radius: 50px;
-  margin-top: 2.2%;
+  margin-top: 1.8rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 /*===============*/
@@ -168,6 +175,10 @@ footer {
     display: flex;
     width: 100%;
     height: 8rem;
+  }
+
+  #top-pc form input {
+    margin-top: 1.6rem;
   }
 
   .list-pc li {
@@ -285,6 +296,12 @@ footer {
     display: flex;
     width: 100%;
     height: 8rem;
+    position: relative;
+  }
+  #top-pc form {
+    text-align: left;
+    position: absolute;
+    left: 5.2rem;
   }
 
   .list-pc li {
@@ -343,8 +360,8 @@ footer {
   /* footer */
 
   .top-footer {
-    width: 30rem;
-    padding-left: 2rem;
+    width: 100%;
+    padding-left: 4rem;
   }
 
   .nav-footer {
@@ -359,7 +376,8 @@ footer {
 
   .nav-footer ul {
     list-style-type: none;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 7.8rem;
   }
 
   .reseaux-footer {
