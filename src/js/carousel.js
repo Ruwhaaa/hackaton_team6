@@ -1,5 +1,5 @@
 const slider = document.querySelector('.carousel');
-const mediaQueryList = window.matchMedia('(max-width: 841px)');
+const mediaQueryList = window.matchMedia('(max-width: 2000px)');
 const touch_c = document.querySelector('.valeur_c');
 const touch_s = document.querySelector('.valeur_s');
 const touch_r = document.querySelector('.valeur_r');
