@@ -1,0 +1,501 @@
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+                    body {
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    /* ****************************************************************/
+                    /*NOS VALEURS */
+                    
+                    .img_princ_valeurs {
+                        background-image: url("../img/nos-valeurs.jpg");
+                        width: 100%;
+                        height: 46vh;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        /* border-radius: 102px; */
+                        border-bottom-left-radius: 18%;
+                        border-bottom-right-radius: 18%;
+                        /* -webkit-clip-path: circle(61% at 50% 35%);*/
+                        /*clip-path: circle(61% at 50% 35%); */
+                    }
+                    
+                    .img_princ_valeurs p {
+                        position: absolute;
+                        top: 45%;
+                        transform: translate(50%, 50%);
+                        color: white;
+                        font-size: 10vw;
+                        right: 46%;
+                        width: 207px;
+                    }
+                    
+                    .environnement {
+                        margin-top: 6vh;
+                        color: #333333
+                    }
+                    
+                    .environnement p {
+                        font-size: 15px;
+                        text-align: start;
+                        margin-left: 6%;
+                        margin-top: 4%;
+                    }
+                    
+                    .environnement h3 {
+                        font-size: 25px;
+                        margin-left: 6%;
+                    }
+                    
+                    .nv_produits {
+                        text-align: center;
+                    }
+                    
+                    .nv_produits h3,
+                    p,
+                    img {
+                        width: 90%;
+                        margin-top: 6vh;
+                    }
+                    
+                    .nv_produits h3 {
+                        font-size: 25px;
+                        color: #333333;
+                        text-align: start;
+                        margin-left: 7%;
+                    }
+                    
+                    .nv_produits img {
+                        margin-top: 3vh;
+                        margin-bottom: 3vh;
+                        border-radius: 31px;
+                        box-shadow: 1px 2px 2px;
+                    }
+                    
+                    .nv_produits button {
+                        position: absolute;
+                        right: 50%;
+                        transform: translate(50%, -50%);
+                        border-radius: 20px;
+                        border: none;
+                        background-color: #f8ebb9;
+                        height: 6vh;
+                        width: 13rem;
+                        margin-top: 7vh;
+                    }
+                    
+                    .nv_produits button:hover {
+                        color: white;
+                    }
+                    
+                    .nv_produits p {
+                        width: 88%;
+                        font-size: 15px;
+                        text-align: start;
+                        margin-left: 6%;
+                    }
+                    
+                    .producteurs {
+                        margin-top: 16vh;
+                        text-align: center;
+                    }
+                    
+                    .producteurs p {
+                        font-size: 15px;
+                        text-align: start;
+                        margin-left: 6%;
+                    }
+                    
+                    .producteurs h3 {
+                        font-size: 25px;
+                        color: #333333;
+                        text-align: start;
+                        margin-left: 7%;
+                    }
+                    
+                    .producteurs img {
+                        margin-top: 3vh;
+                        margin-bottom: 3vh;
+                        border-radius: 31px;
+                        box-shadow: 1px 2px 2px;
+                    }
+                    
+                    .producteurs button {
+                        position: absolute;
+                        right: 50%;
+                        transform: translate(50%, -50%);
+                        border-radius: 20px;
+                        border: none;
+                        background-color: #f8ebb9;
+                        height: 6vh;
+                        width: 13rem;
+                        margin-top: 7vh;
+                    }
+                    
+                    .producteurs button:hover {
+                        color: white;
+                    }
+                    
+                    .visitez {
+                        margin-top: 18vh;
+                    }
+                    
+                    .visitez p {
+                        font-size: 15px;
+                        margin-left: 6%;
+                    }
+                    
+                    .visitez button {
+                        position: absolute;
+                        right: 50%;
+                        transform: translate(50%, -50%);
+                        border-radius: 20px;
+                        border: none;
+                        background-color: #f8ebb9;
+                        height: 6vh;
+                        width: 13rem;
+                        margin-top: 7vh;
+                    }
+                    
+                    .visitez button:hover {
+                        color: white;
+                    }
+                    /*RESPONSIVE **************************************************/
+                    /* "Home Page" Media queries IPAD DEBUT  */
+                    
+                    @media screen and (min-width:540px) and (max-width:720px) {
+                        #hd_paragraphe {
+                            margin-top: -30px;
+                        }
+                    }
+                    
+                    @media screen and (min-width:540px) and (max-width:720px) {
+                        #hd_filtre form img {
+                            height: 1.9rem;
+                            margin-left: 3vw;
+                        }
+                    }
+                    
+                    @media screen and (min-width:1024px) {
+                        h1 {
+                            font-size: 6vw;
+                        }
+                        #hd_filtre p {
+                            font-size: 3vw;
+                        }
+                        #hd_filtre form {
+                            height: 6vw;
+                            width: 16rem;
+                        }
+                        #hd_filtre form img {
+                            height: 2.9rem;
+                            margin-left: -38px;
+                        }
+                        #hd_filtre input {
+                            font-size: 20px;
+                            margin-left: -2vw;
+                        }
+                        main p:nth-child(-n+4) {
+                            text-align: start;
+                            margin-left: auto;
+                            margin-right: auto;
+                            text-align: center;
+                        }
+                        #hd_paragraphe {
+                            font-size: 20px;
+                        }
+                        #mn_search button {
+                            width: 16rem;
+                            height: 6vw;
+                        }
+                        #mn_search a {
+                            font-size: 18px;
+                        }
+                    }
+                    
+                    @media screen and (min-width:768px) {
+                        h1 {
+                            font-size: 301%;
+                            width: 85%;
+                        }
+                        #hd_paragraphe {
+                            margin-top: -1%;
+                        }
+                        main p:nth-child(2) {
+                            padding-top: 0;
+                        }
+                        main p:nth-child(-n+6) {
+                            text-align: start;
+                            margin-left: 5%;
+                            margin-top: 0;
+                            padding-top: 0;
+                            width: 67%;
+                        }
+                        #mn_search button {
+                            top: 90%;
+                            height: 6%
+                        }
+                        #hd_filtre p {
+                            font-size: 161%;
+                        }
+                        .hd_main_image {
+                            height: 78vh;
+                        }
+                        #hd_filtre form {
+                            height: 6%;
+                            bottom: 9rem;
+                        }
+                        #hd_filtre form img {
+                            margin-left: 0;
+                        }
+                    }
+                    /* HOME PAGE IPAD FIN MEDIA QUERIES  */
+                    /*HOME PAGE LAPTOP DEBUT MEDIA QUERIES 1140PX*/
+                    
+                    @media screen and (min-width:1440px) {
+                        h1 {
+                            font-size: 5vw;
+                            width: 83vw;
+                            margin-left: 7%;
+                        }
+                        .gouttiere_generale {
+                            margin-left: 10%;
+                            margin-right: 10%
+                        }
+                        .hd_main_image {
+                            clip-path: none;
+                            border-bottom-left-radius: 18%;
+                            border-bottom-right-radius: 18%;
+                            height: 78vh;
+                        }
+                        #hd_filtre {
+                            border-bottom-left-radius: 18%;
+                            border-bottom-right-radius: 18%;
+                        }
+                        #hd_filtre p {
+                            font-size: 2vw;
+                            width: 47vw;
+                            top: 38vw;
+                            margin-left: 7%;
+                        }
+                        #hd_filtre form {
+                            position: absolute;
+                            right: 20vw;
+                            top: 35.3vw;
+                            height: 5vw;
+                        }
+                        #hd_filtre form img {
+                            margin-top: 5px;
+                        }
+                        #hd_paragraphe {
+                            margin-top: 53px;
+                            font-size: 27px;
+                            margin-left: 7%;
+                        }
+                        #mn_search button {
+                            margin-top: 120px;
+                        }
+                        #mn_search a {
+                            font-size: 23px;
+                            letter-spacing: 3px;
+                        }
+                    }
+                    /* Media querie "Home Page" */
+                    /* Début Media queries "Page Nos Valeurs"  */
+                    
+                    @media screen and (min-width:0) and (max-width:540px) {
+                        .img_princ_valeurs {
+                            width: 100%;
+                            height: 61vh;
+                            margin-top: -14px;
+                        }
+                        .img_princ_valeurs p {
+                            width: 317px;
+                            text-align: center;
+                            top: 50%;
+                        }
+                    }
+                    
+                    @media screen and (min-width:541px) and (max-width:720px) {
+                        .img_princ_valeurs {
+                            clip-path: none;
+                            border-bottom-left-radius: 20%;
+                            border-bottom-right-radius: 20%;
+                        }
+                        .img_princ_valeurs p {
+                            right: 47%;
+                            width: 53%;
+                            text-align: center;
+                            top: 53%;
+                        }
+                    }
+                    
+                    @media screen and (min-width:721px) and (max-width:960px) {
+                        .img_princ_valeurs {
+                            width: 100%;
+                            height: 56vh;
+                            height: 56vh;
+                        }
+                        .img_princ_valeurs p {
+                            top: 50%;
+                            width: 74%;
+                            /* width: 95%; */
+                            right: 37%;
+                        }
+                    }
+                    
+                    @media screen and (min-width:960px) and (max-width:1140px) {
+                        .img_princ_valeurs {
+                            width: 100%;
+                            height: 44vh;
+                        }
+                        .img_princ_valeurs p {
+                            top: 53%;
+                            right: 45%;
+                            width: 77%;
+                        }
+                    }
+                    
+                    @media screen and (min-width:961px) {
+                        .img_princ_valeurs {
+                            width: 100%;
+                            height: 55vh;
+                        }
+                        .img_princ_valeurs p {
+                            top: 53%;
+                            right: 45%;
+                            width: 77%;
+                        }
+                    }
+                    /* MEDIA QUERIES HOME PAGE IPAD */
+                    
+                    @media screen and (min-width:1024px) {
+                        .img_princ_valeurs p {
+                            position: absolute;
+                            top: 51%;
+                            transform: translate(50%, 50%);
+                            color: white;
+                            font-size: 10vw;
+                            right: 46%;
+                            width: 77%;
+                        }
+                    }
+                    
+                    @media screen and (min-width:1100px) {
+                        .img_princ_valeurs {
+                            width: 100%;
+                            height: 62vh;
+                        }
+                        .img_princ_valeurs p {
+                            top: 53%;
+                            right: 45%;
+                            width: 77%;
+                        }
+                    }
+                    
+                    @media screen and (min-width:1230px) {
+                        .img_princ_valeurs {
+                            width: 100%;
+                            height: 74vh;
+                        }
+                        .img_princ_valeurs p {
+                            top: 53%;
+                            right: 45%;
+                            width: 77%;
+                        }
+                    }
+                    
+                    @media screen and (min-width:1300px) {
+                        .img_princ_valeurs {
+                            width: 100%;
+                            height: 83vh;
+                        }
+                        .img_princ_valeurs p {
+                            top: 53%;
+                            right: 45%;
+                            width: 77%;
+                        }
+                        .img_princ_valeurs {
+                            margin-top: -19%;
+                        }
+                        .marge_contenu {
+                            margin-left: 10%;
+                            margin-right: 10%
+                        }
+                        .environnement p {
+                            font-size: 1.3rem;
+                        }
+                        .environnement h3 {
+                            font-size: 1.6rem;
+                        }
+                        .nv_produits h3 {
+                            font-size: 1.6rem;
+                        }
+                        .nv_produits img {
+                            width: 56.3rem;
+                        }
+                        .nv_produits p {
+                            font-size: 1.3rem;
+                        }
+                        .producteurs h3 {
+                            font-size: 1.6rem;
+                        }
+                        .nv_produits button {
+                            font-size: 1.1rem;
+                        }
+                        .producteurs img {
+                            width: 56.3rem;
+                        }
+                        .producteurs p {
+                            font-size: 1.3rem;
+                        }
+                        .producteurs button {
+                            font-size: 1.1rem;
+                        }
+                        .visitez p {
+                            font-size: 1.1rem;
+                        }
+                        .visitez button {
+                            font-size: 1.1rem;
+                        }
+                    }
+                    /* MEDIA QUERIES IPHONE 6/7/8 PLUS */
+                    
+                    @media screen and (min-width:414px) {
+                        #hd_paragraphe {
+                            width: 89%;
+                            margin-top: -21%;
+                        }
+                        #hd_filtre p {
+                            left: 11%;
+                        }
+                        h1 {
+                            margin-left: 6%;
+                        }
+                        #hd_filtre form {
+                            bottom: 8rem;
+                        }
+                        .img_princ_valeurs p {
+                            font-size: 4rem;
+                            text-align: center;
+                            top: 80%;
+                        }
+                    }
+                    /* MEDIA QUERIES IPHONE X */
+                    
+                    @media screen and (min-width:375px) {
+                        h1 {
+                            width: 86%;
+                            font-size: 168%;
+                        }
+                        #hd_filtre form {
+                            bottom: 8rem;
+                        }
+                        #hd_paragraphe {
+                            margin-top: -81px;
+                            margin-left: 8%;
+                        }
+                        #hd_filtre p {
+                            left: 12%;
+                        }
+                    }
+                    /* Fin Media queries "Page Nos Valeurs" */
