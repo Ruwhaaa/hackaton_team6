@@ -425,6 +425,9 @@ footer {
   .p-carpaccio {
     margin-bottom: 1rem;
   }
+  .p-quiche span {
+    font-weight: bold;
+  }
   .lastp-carpaccio {
     margin-bottom: 1rem;
   }
