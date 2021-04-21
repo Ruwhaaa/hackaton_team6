@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/du-champ-a-l'assiette.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -35,9 +35,18 @@
               <li><a href="#assiette">Du champ à l'assiette</a></li>
               <li><a href="#partenaires">Nos partenaires producteurs</a></li>
             </ul>
-            <div class="loupe">
-              <i class="fas fa-search"></i>
-            </div>
+            <form>
+              <input
+                type="search"
+                id="site-search"
+                name="q"
+                aria-label="Search through site content"
+                placeholder="Rechercher"
+              />
+              <div class="loupe">
+                <i class="fas fa-search"></i>
+              </div>
+            </form>
             <div id="menu-burger">
               <img src="../img/Menu-burger.svg" alt="logo menu burger" />
             </div>
@@ -53,31 +62,50 @@
             </ul>
           </div>
         </nav>
+        <h1>Du champ à l'assiette</h1>
       </header>
-      <div class="article-newletter">
-        <div class="text-newsletter">
-          <h2>Inscription à la Newsletter</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            dignissimos deserunt incidunt voluptate consequatur, sequi minima
-            illo praesentium laboriosam sed excepturi tempore? Illum qui ipsa
-            nulla tempora itaque molestias quia.
-          </p>
-        </div>
-        <form>
-          <input
-            type="email"
-            placeholder="Email Adress"
-            src="../img/icon-error.svg"
-          />
-          <button>
-            <img src="../img/icon-arrow.svg" alt="arrow" />
-          </button>
-          <p><small>Entrez une adresse mail valide</small></p>
-        </form>
+
+      <!-- TOP ARTICLE -->
+
+      <div class="top-article">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veritatis
+          atque aperiam nostrum corrupti ratione distinctio quidem vero
+          voluptatem saepe, iure eaque !
+        </p>
+      </div>
+      <div class="top-recettes">
+        <!-- DEBUT DES ARTICLES -->
+
+        <h2>Nos idées recettes</h2>
+        <img
+          src="../img/idee-recette.png"
+          alt="vignettes introduction aux recettes"
+        />
       </div>
     </main>
+
+    <!-- CARPACCCIO -->
+    <div class="article-carpaccio">
+      <div class="carpaccio">
+        <img src="../img/carpaccio.png" alt="Carpaccio" />
+      </div>
+      <div class="text-carpaccio">
+        <p class="p-carpaccio">
+          Carpaccio de Tomates anciennes, burrata et échalote ciselées.
+        </p>
+        <p>Ingrédients</p>
+        <p>3 Belles tomates anciennes</p>
+        <p class="lastp-carpaccio">1 belle échalotte...</p>
+        <p><span>Lire la suite</span></p>
+      </div>
+    </div>
+
+    <!-- QUICHE -->
+
     <!-- Footer -->
+
     <footer>
       <div class="top-footer">
         <div class="contact-footer">

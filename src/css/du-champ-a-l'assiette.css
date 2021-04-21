@@ -1,8 +1,6 @@
 /*==============================*/
-/*===========HOMEPAGE===========*/
+/*=====Du champ à l'assiette====*/
 /*==============================*/
-
-/*======================================================================*/
 
 /*==============*/
 /*====GLOBAL====*/
@@ -82,7 +80,10 @@ body {
   height: 2rem;
   margin-top: 2.7em;
   margin-right: 0.8rem;
-  border: none;
+}
+
+#top-pc form input:focus {
+  outline: none;
 }
 
 #top-pc form {
@@ -299,6 +300,7 @@ footer {
     height: 8rem;
     position: relative;
   }
+
   #top-pc form {
     text-align: left;
     position: absolute;
@@ -313,6 +315,7 @@ footer {
     height: 22rem;
     width: 100%;
     background-color: #f8ebb9;
+    z-index: 3;
   }
 
   .list-mobile {
@@ -356,6 +359,81 @@ footer {
 
   .hide {
     display: none;
+  }
+  /* assiette */
+  header {
+    background-image: url(../img/champ-assiette.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+  }
+
+  header h1 {
+    color: white;
+    position: absolute;
+    width: 10rem;
+    bottom: 2rem;
+    left: 7rem;
+    text-align: center;
+    z-index: 1;
+  }
+
+  /* articles */
+
+  .top-article {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .top-recettes {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .top-recettes img {
+    width: 50%;
+    margin-left: 50%;
+  }
+  .article-carpaccio {
+    display: flex;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .carpaccio {
+    width: 30rem;
+    text-align: center;
+    height: 10rem;
+  }
+
+  .article-carpaccio img {
+    width: 70%;
+    height: 90%;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px;
+  }
+
+  .text-carpaccio {
+    font-size: 12px;
+    line-height: 1.1rem;
+    margin-right: 1.5rem;
+  }
+
+  .p-carpaccio {
+    margin-bottom: 1rem;
+  }
+  .lastp-carpaccio {
+    margin-bottom: 1rem;
+  }
+
+  .text-carpaccio span {
+    font-size: 13px;
+    color: tomato;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   /* footer */
