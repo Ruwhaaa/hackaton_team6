@@ -206,6 +206,7 @@ form input:focus {
 }
 
 #hd_paragraphe p {
+  color: #333333;
   text-align: start;
   font-size: 0.8rem;
   line-height: 1.1rem;
@@ -481,8 +482,16 @@ footer {
   header {
     width: 80%;
   }
-  #hd_filtre h1 {
+  #hd_filtre > h1 {
     font-size: 2rem;
+    line-height: 2.7rem;
+    width: 70%;
+  }
+  #hd_filtre > p {
+    width: 50%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 200;
   }
 
   #hd_filtre > form {
@@ -492,12 +501,23 @@ footer {
   }
 
   #hd_paragraphe {
+    margin-top: 100px;
     margin-left: 13%;
+  }
+
+  #hd_paragraphe > p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 200;
   }
 
   .dock {
     display: flex;
     justify-content: center;
+  }
+
+  #carousel_title {
+    font-size: 5rem;
   }
 
   .logo-top {
@@ -511,7 +531,7 @@ footer {
 **************/
 
 #carousel_title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     color: #333333;
     margin-bottom: 30px;
