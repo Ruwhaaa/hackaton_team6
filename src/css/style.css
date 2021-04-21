@@ -73,6 +73,14 @@ body {
 #menu-burger {
   display: none;
 }
+#top-pc input {
+  background-color: transparent;
+  border: 1px solid #7a7a7a;
+  padding: 15px 30px;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 16px;
+}
 
 .loupe {
   text-align: center;
