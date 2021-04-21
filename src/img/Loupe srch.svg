@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Loupe_srch" data-name="Loupe srch" transform="translate(-288 -15)">
+    <path id="Tracé_1" data-name="Tracé 1" d="M18.1,0H21.9C31.9,0,40,8.954,40,20S31.9,40,21.9,40H18.1C8.1,40,0,31.046,0,20S8.1,0,18.1,0Z" transform="translate(288 15)" fill="#60b100"/>
+    <g id="loupe" transform="translate(299 27)">
+      <rect id="Rectangle_14" data-name="Rectangle 14" width="18" height="16" rx="8" transform="translate(0 0)" fill="rgba(249,249,249,0)" stroke="#fff" stroke-width="2"/>
+    </g>
+    <line id="Ligne_38" data-name="Ligne 38" x2="4.001" y2="3.583" transform="translate(314.999 41.209)" fill="none" stroke="#faf8f8" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>
