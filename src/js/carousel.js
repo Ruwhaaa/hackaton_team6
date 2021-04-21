@@ -18,19 +18,19 @@ slider.addEventListener('mousedown', e => {
 
 touch_c.addEventListener('mousedown', () => {
     if (mediaQueryList.matches) {
-        touch_c.classList.toggle('show');
+        touch_c.classList.toggle('carousel_click');
     }
 });
 
 touch_s.addEventListener('mousedown', () => {
     if (mediaQueryList.matches) {
-        touch_s.classList.toggle('show');
+        touch_s.classList.toggle('carousel_click');
     }
 });
 
 touch_r.addEventListener('mousedown', () => {
     if (mediaQueryList.matches) {
-        touch_r.classList.toggle('show');
+        touch_r.classList.toggle('carousel_click');
     }
 });
 

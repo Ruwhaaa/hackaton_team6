@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*==============================*/
 
 /*===========HOMEPAGE===========*/
@@ -17,7 +17,16 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fff9f9;
-  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 /*==============*/
@@ -26,8 +35,17 @@ body {
 
 /*==============*/
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
 .menu {
-  height: 8rem;
+  height: 5rem;
+  z-index: 2;
   width: 100%;
   margin: 0 auto;
   background-color: #f8ebb9;
@@ -68,7 +86,6 @@ body {
 
 #top-pc {
   width: 100%;
-  display: flex;
 }
 
 .list-pc {
@@ -115,40 +132,41 @@ body {
 /*====================*/
 
 .hd_main_image {
-  background-image: url("../img/gautier-salles-_NAwOXcyxFk-unsplash.jpg");
-  width: 100%;
-  height: 83vh;
-  background-size: cover;
+  background: center url("../img/gautier-salles-_NAwOXcyxFk-unsplash.jpg");
+  width: 120%;
   position: relative;
-  /* border-bottom-left-radius: 20%;*/
-  /*border-bottom-right-radius: 20%; */
-  -webkit-clip-path: circle(61% at 50% 35%);
-  clip-path: circle(61% at 50% 35%);
+  right: 10%;
+  height: 500px;
+  background-size: cover;
+  margin-right: 10%;
+  border-bottom-left-radius: 28%;
+  border-bottom-right-radius: 28%;
+
 }
 
-h1 {
-  color: white;
-  position: absolute;
-  top: 100px;
-  text-align: start;
-  left: 5%;
-  width: 369px;
-  font-size: 27px;
+#hd_filtre h1 {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  margin-bottom: 180px;
 }
 
 #hd_filtre {
+  position: absolute;
+  bottom: 0px;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
-  min-height: 84%;
+  min-height: 100%;
   width: 100%;
+  border-bottom-left-radius: 28%;
+  border-bottom-right-radius: 28%;
+  padding: 50px 15% 50px 15%;
   color: white;
 }
 
 #hd_filtre p {
-  position: absolute;
-  top: 60%;
-  width: 73vw;
-  left: 5%;
+  font-size: 0.9rem;
+  font-weight: 200;
+  margin-bottom: 55px;
+  width: 250px;
 }
 
 /*====================*/
@@ -163,15 +181,11 @@ label {
 
 #hd_filtre form {
   display: flex;
-  position: absolute;
-  bottom: 11rem;
-  background-color: transparent;
   width: 13rem;
+  margin: auto;
   background-color: #f8ebb9;
   border-radius: 20px;
   padding: 0.4rem;
-  transform: translate(50%, 50%);
-  right: 50%;
 }
 
 form input:focus {
@@ -181,19 +195,14 @@ form input:focus {
 #hd_filtre input {
   border-radius: 15px;
   border: none;
-  font-weight: bold;
-  background: transparent;
-}
-
-#hd_filtre input {
+  font-weight: 700;
   color: black;
-  text-align: center;
+  background: transparent;
 }
 
 #hd_filtre form img {
   cursor: pointer;
   height: 1.9rem;
-  margin-left: 3vw;
 }
 
 /*=======================*/
@@ -202,43 +211,25 @@ form input:focus {
 
 /*=======================*/
 
-main p:nth-child(-n + 5) {
-  text-align: start;
-  margin-left: 5%;
-  width: 89%;
-  font-size: 91%;
-}
-
-main p:nth-child(2) {
-  width: 89%;
-  font-size: 91%;
-}
-
-main p {
-  width: 60%;
-}
-
 #hd_paragraphe {
-  margin-top: -68px;
+  width: 80%;
+  margin: 50px 0 70px 0;
+}
+
+#hd_paragraphe p {
+  text-align: start;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 
 #mn_search button {
-  position: absolute;
-  right: 50%;
-  transform: translate(-50%, 50%);
   background-color: #f8ebb9;
-  width: 60vw;
   text-align: center;
   border-radius: 20px;
+  margin-bottom: 70px;
   border: none;
-  height: 6vh;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, 50%);
-  background-color: #f8ebb9;
+  height: 50px;
   width: 13rem;
-  top: 90.4%;
 }
 
 #mn_search button:hover {
@@ -356,6 +347,8 @@ footer {
     display: none;
   }
   .top-mobile {
+    position: absolute;
+    top: 79px;
     height: 22rem;
     width: 100%;
     background-color: #f8ebb9;
@@ -398,7 +391,7 @@ footer {
     margin: 2rem 10rem;
   }
   .show {
-    display: block;
+    display: flex;
   }
   /*=====footer=======*/
   .top-footer {
@@ -473,8 +466,8 @@ footer {
     flex-direction: column;
     background-color: #f8ebb9;
     width: 100%;
-    padding-right: 20%;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .menu img {
     margin-left: 0.5rem;
@@ -549,12 +542,6 @@ footer {
 /***************************************************/
 
 @media screen and (min-width: 540px) and (max-width: 720px) {
-  #hd_paragraphe {
-    margin-top: -30px;
-  }
-}
-
-@media screen and (min-width: 540px) and (max-width: 720px) {
   #hd_filtre form img {
     height: 1.9rem;
     margin-left: 3vw;
@@ -563,7 +550,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 6vw;
+    font-size: 20px;
   }
   #hd_filtre p {
     font-size: 3vw;
@@ -600,11 +587,8 @@ footer {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 301%;
+    font-size: 2rem;
     width: 85%;
-  }
-  #hd_paragraphe {
-    margin-top: -1%;
   }
   main p:nth-child(2) {
     padding-top: 0;
@@ -640,9 +624,11 @@ footer {
 /*HOME PAGE LAPTOP DEBUT MEDIA QUERIES 1140PX*/
 
 @media screen and (min-width: 1440px) {
-  h1 {
-    font-size: 5vw;
-    width: 83vw;
+  header {
+    width: 80%;
+  }
+  #hd_filtre h1 {
+    font-size: 2rem;
     margin-left: 7%;
   }
   .hd_main_image {
@@ -692,7 +678,11 @@ footer {
     font-size: 1.5rem;
     text-align: center;
     color: #333333;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
+}
+
+.dock {
+  width: 100%;
 }
 
 .carousel {
@@ -777,7 +767,7 @@ footer {
     height: 35px;
 }
 
-.show {
+.carousel_click {
     opacity: 1;
 }
 .active {
@@ -799,6 +789,7 @@ footer {
     display: flex;
     padding: 10px 30px 10px 30px;
     flex-direction: column;
+  margin-bottom: 50px;
     width: 80%;
     border: 2px solid #60B100;
 }
