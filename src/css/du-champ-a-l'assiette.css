@@ -423,8 +423,53 @@ footer {
   }
 
   .p-carpaccio {
+    margin-bottom: 0.8rem;
+  }
+
+  .p-quiche span {
+    font-weight: bold;
+  }
+  .lastp-carpaccio {
     margin-bottom: 1rem;
   }
+
+  .text-carpaccio span {
+    font-size: 13px;
+    color: tomato;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .article-carpaccio {
+    display: flex;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .carpaccio {
+    width: 30rem;
+    text-align: center;
+    height: 10rem;
+  }
+
+  .article-carpaccio img {
+    width: 70%;
+    height: 90%;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px;
+  }
+
+  .text-carpaccio {
+    font-size: 12px;
+    line-height: 1.1rem;
+    margin-right: 1.5rem;
+  }
+
+  .p-carpaccio {
+    margin-bottom: 0.8rem;
+  }
+
   .p-quiche span {
     font-weight: bold;
   }
