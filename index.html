@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/normalize.css" />
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css">
     <script
       src="https://kit.fontawesome.com/693d9f2aa8.js"
       crossorigin="anonymous"
@@ -22,6 +23,7 @@
       sizes="16x16"
       href="src/img/logo-online-bio.png"
     />
+
     <title>Online Bio</title>
   </head>
 
@@ -87,10 +89,71 @@
         <p>Lorem ipsum dolor sit amet,</p>
         <p>consectetur adipisicing elit,sed diam.</p>
       </div>
-
       <div id="mn_search">
         <button><a href="">Visitez notre site e-commerce</a></button>
       </div>
+        <h2 id="carousel_title">Nous mettons en avant</h2>
+        <div class="carousel">
+            <div class="carotte">
+                <div class="valeur_c">
+                    <h3>Nos valeurs</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec at tellus ac neque interdum ultrices.
+                    </p>
+                    <button>VOIR PLUS</button>
+                </div>
+            </div>
+            <div class="salade">
+                <div class="valeur_s">
+                    <h3>Du champs à l'assiette</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec at tellus ac neque interdum ultrices.
+                    </p>
+                    <button>VOIR PLUS</button>
+                </div>
+            </div>
+            <div class="recolte">
+                <div class="valeur_r">
+                    <h3>Nos partenaires producteurs</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec at tellus ac neque interdum ultrices.
+                    </p>
+                    <button>VOIR PLUS</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="newsletter">
+                <h2>Inscription à la news letter</h2>
+                <p>Bonjour, je suis</p>
+                <form>
+                    <label>
+                        <input type="text" placeholder="écrire votre nom">
+                    </label>
+                </form>
+                <p>et j'aimerais avoir des informations sur</p>
+                <form>
+                    <label>
+                        <input type="text" placeholder="les fruits de saisons">
+                    </label>
+                </form>
+                <p>Envoyez-moi vos prochaines offres</p>
+                <form>
+                    <label>
+                        <input type="text" placeholder="ex : email@domaine.fr">
+                    </label>
+                </form>
+                <div class="checkbox">
+                    <form>
+                        <label>
+                            <input type="checkbox">
+                        </label>
+                    </form>
+                    <p>En cochant cette case j'accepte les termes et conditions</p>
+                </div>
+                <button>s'inscrire</button>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
     <footer>
@@ -121,5 +184,7 @@
       </div>
     </footer>
     <script src="src/js/index.js"></script>
+    <script src="src/js/carousel.js"></script>
   </body>
 </html>
+
