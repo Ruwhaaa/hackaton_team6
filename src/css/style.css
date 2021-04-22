@@ -261,6 +261,10 @@ form input:focus {
     color: black;
 }
 
+button {
+cursor: pointer;
+}
+
 
 /*===============*/
 
