@@ -21,150 +21,159 @@
     <title>Du champ à l'assiette</title>
   </head>
   <body>
-    <main>
-      <header>
-        <!--Navigation-->
-        <nav class="menu">
-          <!-- Menu sur pc -->
-          <div id="top-pc">
-            <div class="logo-top">
-              <img src="../img/logo-online-bio.png" alt="logo online bio" />
+    <div class="bg-opacity">
+      <main>
+        <header>
+          <!--Navigation-->
+          <nav class="menu">
+            <!-- Menu sur pc -->
+            <div id="top-pc">
+              <div class="logo-top">
+                <img src="../img/logo-online-bio.png" alt="logo online bio" />
+              </div>
+              <ul class="list-pc">
+                <li><a href="#valeurs">Nos valeurs</a></li>
+                <li><a href="#assiette">Du champ à l'assiette</a></li>
+                <li><a href="#partenaires">Nos partenaires producteurs</a></li>
+              </ul>
+              <form>
+                <input
+                  type="search"
+                  id="site-search"
+                  name="q"
+                  aria-label="Search through site content"
+                  placeholder="Rechercher"
+                />
+                <div class="loupe">
+                  <i class="fas fa-search"></i>
+                </div>
+              </form>
+              <div id="menu-burger">
+                <img src="../img/Menu-burger.svg" alt="logo menu burger" />
+              </div>
             </div>
-            <ul class="list-pc">
-              <li><a href="#valeurs">Nos valeurs</a></li>
+
+            <!-- défilement du menu sur mobile/tablette -->
+
+            <div class="top-mobile">
+              <ul class="list-mobile">
+                <li><a href="#valeurs">Nos valeurs</a></li>
+                <li><a href="#produit">Vie du produit</a></li>
+                <li><a href="#partenaires">Nos partenaires</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <h1>Du champ à l'assiette</h1>
+        </header>
+
+        <!-- TOP ARTICLE -->
+
+        <div class="top-article">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            veritatis atque aperiam nostrum corrupti ratione distinctio quidem
+            vero voluptatem saepe, iure eaque !
+          </p>
+        </div>
+        <div class="top-recettes">
+          <!-- DEBUT DES ARTICLES -->
+          <h2>Nos idées recettes</h2>
+
+          <img
+            src="../img/idee-recette.png"
+            alt="vignettes introduction aux recettes"
+          />
+        </div>
+      </main>
+
+      <!-- CARPACCCIO -->
+      <div class="container-carpaccio">
+        <div class="article-carpaccio">
+          <div class="carpaccio">
+            <img src="../img/carpaccio.png" alt="Carpaccio" />
+          </div>
+          <div class="text-carpaccio">
+            <p class="p-carpaccio">
+              <span> Carpaccio de Tomates</span> anciennes, burrata et échalote
+              ciselées.
+            </p>
+            <p>Ingrédients</p>
+            <p>3 Belles tomates anciennes</p>
+            <p class="lastp-carpaccio">1 belle échalotte...</p>
+            <p><span>Lire la suite</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICHE -->
+      <div class="container-quiche">
+        <div class="article-quiche">
+          <div class="text-quiche">
+            <p class="p-quiche">
+              <span>Quiche Saumon Brocolis</span>
+            </p>
+            <p>Ingrédients</p>
+            <p>1 pâte brisés</p>
+            <p>250g de saumon frais (style pavé)</p>
+            <p>1 échalotte</p>
+            <p class="lastp-quiche">150g de brocoli</p>
+            <p><span>Lire la suite</span></p>
+          </div>
+          <div class="quiche">
+            <img src="../img/quiche.png" alt="Quiche" />
+          </div>
+        </div>
+      </div>
+      <div class="bg-prod-recette">
+        <div class="producteurs">
+          <h2>Pour savoir comment les produits arrivent dans votre assiette</h2>
+          <button>Nos partenaires producteurs</button>
+        </div>
+
+        <div class="recettes">
+          <h2>Pour réaliser nos recettes</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsam
+            laborum animi autem numquam facilis sapiente eius totam voluptatum
+            molestias cumque, id tenetur reiciendis et.
+          </p>
+          <button>Visitez notre site e-commerce</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <footer>
+        <div class="top-footer">
+          <div class="contact-footer">
+            <img src="../img/logo-online-bio.png" alt="logo online bio" />
+            <p>06.09.39.90.09</p>
+            <p>onlinebio.contact@gmail.com</p>
+          </div>
+          <div class="nav-footer">
+            <ul>
+              <li><a href="#valeurs"> Nos valeurs</a></li>
               <li><a href="#assiette">Du champ à l'assiette</a></li>
               <li><a href="#partenaires">Nos partenaires producteurs</a></li>
-            </ul>
-            <form>
-              <input
-                type="search"
-                id="site-search"
-                name="q"
-                aria-label="Search through site content"
-                placeholder="Rechercher"
-              />
-              <div class="loupe">
-                <i class="fas fa-search"></i>
-              </div>
-            </form>
-            <div id="menu-burger">
-              <img src="../img/Menu-burger.svg" alt="logo menu burger" />
-            </div>
-          </div>
-
-          <!-- défilement du menu sur mobile/tablette -->
-
-          <div class="top-mobile">
-            <ul class="list-mobile">
-              <li><a href="#valeurs">Nos valeurs</a></li>
-              <li><a href="#produit">Vie du produit</a></li>
-              <li><a href="#partenaires">Nos partenaires</a></li>
+              <li><a href="#mentions légales">Mentions légales</a></li>
             </ul>
           </div>
-        </nav>
-
-        <h1>Du champ à l'assiette</h1>
-      </header>
-
-      <!-- TOP ARTICLE -->
-
-      <div class="top-article">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veritatis
-          atque aperiam nostrum corrupti ratione distinctio quidem vero
-          voluptatem saepe, iure eaque !
-        </p>
-      </div>
-      <div class="top-recettes">
-        <!-- DEBUT DES ARTICLES -->
-
-        <h2>Nos idées recettes</h2>
-        <img
-          src="../img/idee-recette.png"
-          alt="vignettes introduction aux recettes"
-        />
-      </div>
-    </main>
-
-    <!-- CARPACCCIO -->
-    <div class="article-carpaccio">
-      <div class="carpaccio">
-        <img src="../img/carpaccio.png" alt="Carpaccio" />
-      </div>
-      <div class="text-carpaccio">
-        <p class="p-carpaccio">
-          <span> Carpaccio de Tomates</span> anciennes, burrata et échalote
-          ciselées.
-        </p>
-        <p>Ingrédients</p>
-        <p>3 Belles tomates anciennes</p>
-        <p class="lastp-carpaccio">1 belle échalotte...</p>
-        <p><span>Lire la suite</span></p>
-      </div>
-    </div>
-
-    <!-- QUICHE -->
-    <div class="article-quiche">
-      <div class="text-quiche">
-        <p class="p-quiche">
-          <span>Carpaccio de Tomates</span> anciennes, burrata et échalote
-          ciselées.
-        </p>
-        <p>Ingrédients</p>
-        <p>3 Belles tomates anciennes</p>
-        <p class="lastp-quiche">1 belle échalotte...</p>
-        <p><span>Lire la suite</span></p>
-      </div>
-      <div class="quiche">
-        <img src="../img/quiche.png" alt="Quiche" />
-      </div>
-    </div>
-
-    <div class="producteurs">
-      <h2>Pour savoir comment les produits arrivent dans votre assiette</h2>
-      <button>Nos partenaires producteurs</button>
-    </div>
-
-    <div class="recettes">
-      <h2>Pour réaliser nos recettes</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsam
-        laborum animi autem numquam facilis sapiente eius totam voluptatum
-        molestias cumque, id tenetur reiciendis et.
-      </p>
-      <button>Visitez notre site e-commerce</button>
-    </div>
-
-    <!-- Footer -->
-
-    <footer>
-      <div class="top-footer">
-        <div class="contact-footer">
-          <img src="../img/logo-online-bio.png" alt="logo online bio" />
-          <p>06.09.39.90.09</p>
-          <p>onlinebio.contact@gmail.com</p>
         </div>
-        <div class="nav-footer">
-          <ul>
-            <li><a href="#valeurs"> Nos valeurs</a></li>
-            <li><a href="#assiette">Du champ à l'assiette</a></li>
-            <li><a href="#partenaires">Nos partenaires producteurs</a></li>
-          </ul>
+        <div class="reseaux-footer">
+          <p>Restez en contact avec nous</p>
+          <div class="fcb-insta">
+            <a href="https://www.facebook.com/Onlinebio75/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/onlinebio_fruitetlegume/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
         </div>
-      </div>
-      <div class="reseaux-footer">
-        <p>Restez en contact avec nous</p>
-        <div class="fcb-insta">
-          <a href="https://www.facebook.com/Onlinebio75/"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="https://www.instagram.com/onlinebio_fruitetlegume/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="../js/index.js"></script>
   </body>
 </html>
