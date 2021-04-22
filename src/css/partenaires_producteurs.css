@@ -1,7 +1,39 @@
                     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
                     body {
                         font-family: 'Roboto', sans-serif;
-                        background-color: #FFF9F9;
+                        background-image: url('../img/bois.png');
+                        color: white;
+                        background-attachment: fixed;
+                    }
+                    
+                    .background_opacity_partenaires_producteurs {
+                        background: rgba(255, 255, 255, 0.15);
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    .partenaire_text {
+                        padding: 1rem;
+                        border-radius: 5%;
+                    }
+                    /* .opacity_text_nos_partenaires :nth-child(1) {
+                        text-shadow: 1px 1px black;
+                        border: 1px solid black;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 6%;
+                        border: none;
+                    } */
+                    
+                    .histoire_producteurs:nth-child(1) {
+                        padding-bottom: 2%;
+                    }
+                    
+                    .opacity_text_nos_partenaires {
+                        text-shadow: 1px 1px black;
+                        border: 1px solid black;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 6%;
+                        border: none;
                     }
                     
                     .img_princ_nos_producteurs {
@@ -41,15 +73,15 @@
                         width: 100%;
                         margin-top: 13%;
                     }
-                    
-                    .producteurs_semaine p:nth-child(-n+6) {
+                    /* .producteurs_semaine p:nth-child(-n+6) {
                         text-align: start;
-                    }
-                    
-                    .producteurs_semaine p:nth-child(6) {
+                        padding: 1rem;
+                    } */
+                    /* .producteurs_semaine p:nth-child(6) {
                         color: rgb(255, 0, 0, 0.8);
                         margin-top: 4%;
-                    }
+                        padding: 1rem;
+                    } */
                     
                     .visitez_notre_site {
                         position: absolute;
@@ -66,10 +98,6 @@
                     
                     .visitez_notre_site:focus {
                         outline: 0;
-                    }
-                    
-                    .paragraphe_après_caroussel p {
-                        margin-top: 10%;
                     }
                     
                     .gouttiere_globale {
@@ -115,5 +143,37 @@
                             font-size: 35px;
                             font-weight: bold;
                             text-align: center
+                        }
+                        .visitez_notre_site button {
+                            height: 8vh;
+                            width: 24rem;
+                            font-size: 2rem;
+                        }
+                    }
+                    /* MEDIA ORDI 1440PX */
+                    
+                    @media screen and (min-width:1024px) {
+                        .text_one {
+                            font-size: 35px;
+                            padding: 1rem;
+                            border-radius: 57px;
+                        }
+                        .producteurs_semaine img {
+                            border-radius: 31px;
+                            box-shadow: 1px 2px 2px;
+                            width: 64%;
+                            margin-top: 3%;
+                            transform: translateX(-50%);
+                            margin-left: 50%;
+                        }
+                        .partenaire_text {
+                            margin-top: 6%;
+                        }
+                        .producteurs_semaine p:nth-child(-n+6) {
+                            font-size: 27px;
+                            text-align: start;
+                        }
+                        .partenaire_text p {
+                            font-size: 27px;
                         }
                     }

@@ -147,6 +147,15 @@ body {
     margin-right: 10%;
 }
 
+
+/* ********************************************************** */
+
+
+/* MEDIA QUERIES NOS VALEURS  */
+
+
+/* ********************************************************** */
+
 @media screen and (min-width:1440px) {
     .justify_under_main_image {
         margin-left: 20%;
