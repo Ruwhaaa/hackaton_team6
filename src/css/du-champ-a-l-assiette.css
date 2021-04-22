@@ -1,435 +1,121 @@
 /*==============================*/
+
+
 /*=====Du champ à l'assiette====*/
+
+
 /*==============================*/
 
+
 /*==============*/
+
+
 /*====GLOBAL====*/
+
+
 /*==============*/
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
-
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #fff9f9;
-  font-size: 15px;
-  background-image: url(../img/bg-bois.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
-  text-shadow: 1px 1px black;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff9f9;
+    font-size: 15px;
+    background-image: url(../img/bg-bois.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 .bg-opacity {
-  background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
+
 /*==============*/
+
+
 /*====HEADER====*/
+
+
 /*==============*/
 
 .menu {
-  height: 8rem;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #f8ebb9;
+    height: 8rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f8ebb9;
 }
 
 .menu ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  width: 100%;
-  margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+    margin-left: 4rem;
 }
 
 .menu a {
-  text-shadow: none;
-  text-decoration: none;
-  color: #60b100;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: bold;
+    text-shadow: none;
+    text-decoration: none;
+    color: #60b100;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .menu a:hover {
-  color: white;
+    color: white;
 }
 
 .menu ul li {
-  margin: 3rem 2rem;
+    margin: 3rem 2rem;
 }
 
 .logo-top img {
-  width: 5rem;
-  margin-left: 2rem;
+    width: 5rem;
+    margin-left: 2rem;
 }
 
 .top-mobile {
-  display: none;
+    display: none;
 }
 
 #top-pc {
-  width: 100%;
-  display: flex;
+    width: 100%;
+    display: flex;
 }
 
 .list-pc {
-  width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #menu-burger {
-  display: none;
+    display: none;
 }
+
 #top-pc form input {
-  background-color: transparent;
-  width: 10rem;
-  background-color: #f8ebb9;
-  border-radius: 20px;
-  padding: 0.4rem;
-  height: 2rem;
-  margin-top: 2.7em;
-  margin-right: 0.8rem;
-  display: none;
+    background-color: transparent;
+    width: 10rem;
+    background-color: #f8ebb9;
+    border-radius: 20px;
+    padding: 0.4rem;
+    height: 2rem;
+    margin-top: 2.7em;
+    margin-right: 0.8rem;
+    display: none;
 }
 
 #top-pc form input:focus {
-  outline: none;
+    outline: none;
 }
 
 #top-pc form {
-  display: flex;
+    display: flex;
 }
 
 .loupe {
-  text-align: center;
-  font-size: 1.5rem;
-  color: white;
-  background-color: #60b100;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 8px;
-  border-radius: 50px;
-  margin-top: 1.8rem;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-/*===============*/
-/*=====FOOTER====*/
-/*===============*/
-
-footer {
-  background-color: #f8ebb9;
-  font-size: 0.625rem;
-  border-top: solid 8px #60b100;
-  text-shadow: none;
-}
-
-.top-footer {
-  display: flex;
-  line-height: 2rem;
-  color: #7a7a7a;
-  padding-left: 0;
-  width: 15rem;
-  margin: 0 auto;
-}
-
-.contact-footer img {
-  width: 4rem;
-  height: 4rem;
-}
-
-.nav-footer {
-  margin: 2.8rem 5rem;
-}
-
-.nav-footer a {
-  text-decoration: none;
-  color: #7a7a7a;
-}
-.nav-footer a:hover {
-  color: white;
-}
-
-.nav-footer ul {
-  list-style-type: none;
-  margin-left: 1rem;
-  width: 10rem;
-}
-
-.reseaux-footer {
-  text-align: center;
-}
-.fcb-insta .fab {
-  margin: 0.4rem 2rem;
-  font-size: 1.3rem;
-  color: #60b100;
-}
-
-.fcb-insta .fa-facebook-f {
-  font-size: 1.1rem;
-}
-
-.fcbk-insta .fab:hover {
-  color: white;
-}
-
-/*=====================*/
-/*=======Desktop=======*/
-/*=====================*/
-
-/* @media screen and (min-width: 1440px) { */
-/* assiette */
-
-header {
-  background-image: url(../img/champ-assiette.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 80%;
-  height: 50vh;
-  margin: 0 auto;
-}
-
-.top-assiette {
-  display: flex;
-  flex-direction: column;
-}
-
-.top-assiette img {
-  width: 100%;
-}
-
-header h1 {
-  text-align: center;
-  color: white;
-  width: 14%;
-  margin: 0 auto;
-  margin-top: 16%;
-  text-shadow: 1px 1px black;
-}
-
-/* articles */
-
-.top-article {
-  width: 65%;
-  margin: 3% auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 15px;
-  border-radius: 15px;
-}
-
-.top-recettes {
-  width: 65%;
-  margin: 0 auto;
-}
-
-.top-recettes img {
-  width: 40%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-left: 45%;
-}
-
-.top-article h2 {
-  margin-bottom: 2rem;
-}
-
-.article-carpaccio {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.carpaccio {
-  width: 50%;
-  text-align: center;
-}
-
-.article-carpaccio img {
-  width: 65%;
-  background-size: cover;
-  border-radius: 15px;
-  box-shadow: 1px 1px 1px black;
-}
-
-.text-carpaccio {
-  width: 25rem;
-  height: 13rem;
-  font-size: 14px;
-  line-height: 1.1rem;
-  margin-right: 6%;
-  margin-top: 10%;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 15px;
-  border-radius: 15px;
-}
-
-.p-carpaccio {
-  margin-bottom: 0.8rem;
-}
-
-.lastp-carpaccio {
-  margin-bottom: 1rem;
-}
-
-.text-carpaccio span {
-  font-size: 15px;
-  color: tomato;
-  font-weight: bold;
-  cursor: pointer;
-  text-shadow: none;
-}
-
-.p-carpaccio span {
-  color: white;
-  font-weight: bold;
-  text-shadow: none;
-}
-
-/* Quiche */
-
-.article-quiche {
-  display: flex;
-  justify-content: space-between;
-  width: 65%;
-  margin: 4rem auto;
-}
-
-.quiche {
-  width: 40%;
-  text-align: center;
-}
-
-.article-quiche img {
-  width: 80%;
-  height: 100%;
-  background-size: cover;
-  border-radius: 15px;
-  box-shadow: 1px 1px 1px black;
-  margin-left: 5%;
-}
-
-.text-quiche {
-  line-height: 1.1rem;
-  margin-left: 5%;
-  margin-top: 9%;
-  width: 30rem;
-  height: 13rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 15px;
-  border-radius: 15px;
-}
-
-.p-quiche {
-  margin-bottom: 0.8rem;
-}
-
-.lastp-quiche {
-  margin-bottom: 1rem;
-}
-
-.text-quiche span {
-  color: tomato;
-  font-weight: bold;
-  cursor: pointer;
-  text-shadow: none;
-}
-.p-quiche span {
-  font-weight: bold;
-  color: white;
-  text-shadow: none;
-}
-
-.producteurs,
-.recettes {
-  width: 80%;
-  margin: 1.2rem auto;
-  text-align: center;
-}
-
-button {
-  background-color: #f8ebb9;
-  border: none;
-  padding: 10px;
-  border-radius: 20px;
-  margin-top: 1rem;
-  cursor: pointer;
-  color: #7a7a7a;
-}
-
-h2 {
-  margin-bottom: 1rem;
-}
-.bg-prod-recette {
-  width: 60%;
-  margin: 2rem auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 15px;
-  border-radius: 15px;
-}
-/* } */
-
-/*=====================*/
-/*=======Tablette======*/
-/*=====================*/
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  /* header */
-
-  #menu-burger {
-    display: block;
-    margin-right: 1.5rem;
-  }
-  #top-pc {
-    display: flex;
-    width: 100%;
-    height: 8rem;
-  }
-
-  #top-pc form input {
-    margin-top: 1.6rem;
-  }
-
-  .list-pc li {
-    display: none;
-  }
-
-  .top-mobile {
-    height: 22rem;
-    width: 100%;
-    background-color: #f8ebb9;
-    position: relative;
-  }
-
-  .list-mobile {
-    display: flex;
-    flex-direction: column;
-    background-color: #f8ebb9;
-    width: 100%;
-    padding-right: 15%;
-    text-align: center;
-  }
-
-  .menu a:hover {
-    color: white;
-  }
-
-  .menu img {
-    margin-left: 0.5rem;
-    width: 4rem;
-    height: 4rem;
-  }
-
-  #menu-burger img {
-    margin-top: 0.5rem;
-    margin-right: 0.5em;
-    width: 2.4rem;
-    cursor: pointer;
-  }
-
-  .loupe {
     text-align: center;
     font-size: 1.5rem;
     color: white;
@@ -438,511 +124,809 @@ h2 {
     height: 2.5rem;
     padding: 8px;
     border-radius: 50px;
-    margin-top: 1.2rem;
+    margin-top: 1.8rem;
     margin-right: 1rem;
-  }
+    cursor: pointer;
+}
 
-  .menu ul li {
-    margin: 2rem 10rem;
-  }
 
-  .show {
-    display: block;
-  }
+/*===============*/
 
-  /* assiette */
 
-  header {
+/*=====FOOTER====*/
+
+
+/*===============*/
+
+footer {
+    background-color: #f8ebb9;
+    font-size: 0.625rem;
+    border-top: solid 8px #60b100;
+    text-shadow: none;
+}
+
+.top-footer {
+    display: flex;
+    line-height: 2rem;
+    color: #7a7a7a;
+    padding-left: 0;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.contact-footer img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.nav-footer {
+    margin: 2.8rem 5rem;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+.nav-footer a:hover {
+    color: white;
+}
+
+.nav-footer ul {
+    list-style-type: none;
+    margin-left: 1rem;
+    width: 10rem;
+}
+
+.reseaux-footer {
+    text-align: center;
+}
+
+.fcb-insta .fab {
+    margin: 0.4rem 2rem;
+    font-size: 1.3rem;
+    color: #60b100;
+}
+
+.fcb-insta .fa-facebook-f {
+    font-size: 1.1rem;
+}
+
+.fcbk-insta .fab:hover {
+    color: white;
+}
+
+
+/*=====================*/
+
+
+/*=======Desktop=======*/
+
+
+/*=====================*/
+
+
+/* @media screen and (min-width: 1440px) { */
+
+
+/* assiette */
+
+header {
     background-image: url(../img/champ-assiette.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
+    width: 80%;
     height: 50vh;
-  }
+    margin: 0 auto;
+}
 
-  .top-assiette {
+.top-assiette {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .top-assiette img {
+.top-assiette img {
     width: 100%;
-  }
+}
 
-  header h1 {
-    margin-top: 35%;
+header h1 {
+    text-align: center;
     color: white;
-    width: 10rem;
-    text-align: center;
+    width: 14%;
+    margin: 0 auto;
+    margin-top: 16%;
     text-shadow: 1px 1px black;
-  }
+}
 
-  /* articles */
 
-  .top-article {
-    width: 67%;
-    margin: 2rem auto;
-  }
+/* articles */
 
-  .top-recettes {
+.top-article {
+    width: 65%;
+    margin: 3% auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.top-recettes {
     width: 65%;
     margin: 0 auto;
-  }
+}
 
-  .top-recettes img {
-    width: 65%;
-    margin-left: 28%;
-    margin-bottom: 1rem;
-  }
+.top-recettes img {
+    width: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 45%;
+}
 
-  .top-article h2 {
+.top-article h2 {
     margin-bottom: 2rem;
-  }
+}
 
-  .article-carpaccio {
+.article-carpaccio {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    width: 70%;
     margin: 0 auto;
-  }
+}
 
-  .carpaccio {
-    width: 28rem;
+.carpaccio {
+    width: 50%;
     text-align: center;
-    height: 10rem;
-  }
+}
 
-  .article-carpaccio img {
-    width: 12rem;
-    height: 10rem;
+.article-carpaccio img {
+    width: 65%;
     background-size: cover;
     border-radius: 15px;
     box-shadow: 1px 1px 1px black;
-  }
+}
 
-  .text-carpaccio {
-    width: 12rem;
+.text-carpaccio {
+    width: 25rem;
+    height: 13rem;
     font-size: 14px;
     line-height: 1.1rem;
-    margin-right: 18%;
-    margin-top: 0;
-  }
+    margin-right: 6%;
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 15px;
+}
 
-  .p-carpaccio {
+.p-carpaccio {
     margin-bottom: 0.8rem;
-  }
+}
 
-  .lastp-carpaccio {
+.lastp-carpaccio {
     margin-bottom: 1rem;
-  }
+}
 
-  .text-carpaccio span {
-    font-size: 13px;
+.text-carpaccio span {
+    font-size: 15px;
     color: tomato;
     font-weight: bold;
     cursor: pointer;
-  }
+    text-shadow: none;
+}
 
-  .p-carpaccio span {
+.p-carpaccio span {
+    color: white;
     font-weight: bold;
-    color: black;
-  }
+    text-shadow: none;
+}
 
-  .article-quiche {
+
+/* Quiche */
+
+.article-quiche {
     display: flex;
-    width: 100%;
-    margin: 1rem auto;
-  }
-
-  .quiche {
-    width: 38%;
-    height: 100%;
-    text-align: center;
-    margin-left: 0;
-    margin-top: 16%;
-    margin-right: 12%;
-  }
-
-  .article-quiche img {
+    justify-content: space-between;
     width: 65%;
-    height: 90%;
+    margin: 4rem auto;
+}
+
+.quiche {
+    width: 40%;
+    text-align: center;
+}
+
+.article-quiche img {
+    width: 80%;
+    height: 100%;
     background-size: cover;
     border-radius: 15px;
     box-shadow: 1px 1px 1px black;
-  }
+    margin-left: 5%;
+}
 
-  .text-quiche {
-    font-size: 12px;
+.text-quiche {
     line-height: 1.1rem;
-    margin-left: 8rem;
-    width: 12rem;
-  }
+    margin-left: 5%;
+    margin-top: 9%;
+    width: 30rem;
+    height: 13rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 15px;
+}
 
-  .p-quiche {
+.p-quiche {
     margin-bottom: 0.8rem;
-  }
+}
 
-  .lastp-quiche {
+.lastp-quiche {
     margin-bottom: 1rem;
-  }
+}
 
-  .text-quiche span {
-    font-size: 13px;
+.text-quiche span {
     color: tomato;
     font-weight: bold;
     cursor: pointer;
-  }
-  .p-quiche span {
-    font-weight: bold;
-    color: black;
-  }
+    text-shadow: none;
+}
 
-  .producteurs,
-  .recettes {
+.p-quiche span {
+    font-weight: bold;
+    color: white;
+    text-shadow: none;
+}
+
+.producteurs,
+.recettes {
     width: 80%;
     margin: 1.2rem auto;
     text-align: center;
-  }
+}
 
-  .bg-prod-recette {
-    width: 66%;
-  }
-
-  button {
+button {
     background-color: #f8ebb9;
     border: none;
     padding: 10px;
     border-radius: 20px;
     margin-top: 1rem;
     cursor: pointer;
-    color: #7a7a7a;
-  }
-
-  h2 {
-    margin-bottom: 1rem;
-  }
-
-  /*=====footer=======*/
-
-  .top-footer {
-    display: flex;
-    line-height: 2rem;
-    color: #7a7a7a;
-    width: 100%;
-    padding-left: 30%;
-  }
-
-  .nav-footer {
-    width: 10rem;
-  }
-
-  .nav-footer a {
-    text-decoration: none;
-    color: #7a7a7a;
-  }
-
-  .nav-footer a:hover {
-    color: #7a7a7a;
-  }
-
-  .nav-footer ul {
-    list-style-type: none;
-    margin-left: 0;
-  }
-
-  .reseaux-footer {
-    text-align: center;
-  }
-  .fcb-insta .fab {
-    margin: 0.4rem 2rem;
-    font-size: 1.3rem;
-    color: #60b100;
-  }
-  .fcb-insta .fa-facebook-f {
-    font-size: 1.1rem;
-  }
-
-  .fcbk-insta .fab:hover {
-    color: white;
-  }
+    color: black;
 }
 
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.fcb-insta i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.bg-prod-recette {
+    width: 60%;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.producteurs button a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.producteurs button a {
+    text-decoration: none;
+    color: black;
+}
+
+.recettes a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* } */
+
+
+/*=====================*/
+
+
+/*=======Tablette======*/
+
+
+/*=====================*/
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    /* header */
+    #menu-burger {
+        display: block;
+        margin-right: 1.5rem;
+    }
+    #top-pc {
+        display: flex;
+        width: 100%;
+        height: 8rem;
+    }
+    #top-pc form input {
+        margin-top: 1.6rem;
+    }
+    .list-pc li {
+        display: none;
+    }
+    .top-mobile {
+        height: 22rem;
+        width: 100%;
+        background-color: #f8ebb9;
+        position: relative;
+    }
+    .list-mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: #f8ebb9;
+        width: 100%;
+        padding-right: 15%;
+        text-align: center;
+    }
+    .menu a:hover {
+        color: white;
+    }
+    .menu img {
+        margin-left: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    #menu-burger img {
+        margin-top: 0.5rem;
+        margin-right: 0.5em;
+        width: 2.4rem;
+        cursor: pointer;
+    }
+    .loupe {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        background-color: #60b100;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 8px;
+        border-radius: 50px;
+        margin-top: 1.2rem;
+        margin-right: 1rem;
+    }
+    .menu ul li {
+        margin: 2rem 10rem;
+    }
+    .show {
+        display: block;
+    }
+    /* assiette */
+    header {
+        background-image: url(../img/champ-assiette.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+    }
+    .top-assiette {
+        display: flex;
+        flex-direction: column;
+    }
+    .top-assiette img {
+        width: 100%;
+    }
+    header h1 {
+        margin-top: 35%;
+        color: white;
+        width: 10rem;
+        text-align: center;
+        text-shadow: 1px 1px black;
+    }
+    /* articles */
+    .top-article {
+        width: 67%;
+        margin: 2rem auto;
+    }
+    .top-recettes {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .top-recettes img {
+        width: 65%;
+        margin-left: 28%;
+        margin-bottom: 1rem;
+    }
+    .top-article h2 {
+        margin-bottom: 2rem;
+    }
+    .article-carpaccio {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .carpaccio {
+        width: 28rem;
+        text-align: center;
+        height: 10rem;
+    }
+    .article-carpaccio img {
+        width: 12rem;
+        height: 10rem;
+        background-size: cover;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px black;
+    }
+    .text-carpaccio {
+        width: 12rem;
+        font-size: 14px;
+        line-height: 1.1rem;
+        margin-right: 18%;
+        margin-top: 0;
+    }
+    .p-carpaccio {
+        margin-bottom: 0.8rem;
+    }
+    .lastp-carpaccio {
+        margin-bottom: 1rem;
+    }
+    .text-carpaccio span {
+        font-size: 13px;
+        color: tomato;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .p-carpaccio span {
+        font-weight: bold;
+        color: black;
+    }
+    .article-quiche {
+        display: flex;
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .quiche {
+        width: 38%;
+        height: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 16%;
+        margin-right: 12%;
+    }
+    .article-quiche img {
+        width: 65%;
+        height: 90%;
+        background-size: cover;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px black;
+    }
+    .text-quiche {
+        font-size: 12px;
+        line-height: 1.1rem;
+        margin-left: 8rem;
+        width: 12rem;
+    }
+    .p-quiche {
+        margin-bottom: 0.8rem;
+    }
+    .lastp-quiche {
+        margin-bottom: 1rem;
+    }
+    .text-quiche span {
+        font-size: 13px;
+        color: tomato;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .p-quiche span {
+        font-weight: bold;
+        color: black;
+    }
+    .producteurs,
+    .recettes {
+        width: 80%;
+        margin: 1.2rem auto;
+        text-align: center;
+    }
+    .bg-prod-recette {
+        width: 66%;
+    }
+    button {
+        background-color: #f8ebb9;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 1rem;
+        cursor: pointer;
+        color: #7a7a7a;
+    }
+    h2 {
+        margin-bottom: 1rem;
+    }
+    /*=====footer=======*/
+    .top-footer {
+        display: flex;
+        line-height: 2rem;
+        color: #7a7a7a;
+        width: 100%;
+        padding-left: 30%;
+    }
+    .nav-footer {
+        width: 10rem;
+    }
+    .nav-footer a {
+        text-decoration: none;
+        color: #7a7a7a;
+    }
+    .nav-footer a:hover {
+        color: #7a7a7a;
+    }
+    .nav-footer ul {
+        list-style-type: none;
+        margin-left: 0;
+    }
+    .reseaux-footer {
+        text-align: center;
+    }
+    .fcb-insta .fab {
+        margin: 0.4rem 2rem;
+        font-size: 1.3rem;
+        color: #60b100;
+    }
+    .fcb-insta .fa-facebook-f {
+        font-size: 1.1rem;
+    }
+    .fcbk-insta .fab:hover {
+        color: white;
+    }
+}
+
+
 /*===================*/
+
+
 /*======Mobile=======*/
+
+
 /*===================*/
 
 @media screen and (max-width: 480px) {
-  #menu-burger {
-    display: block;
-    margin-right: 0;
-  }
-
-  #top-pc {
-    display: flex;
-    width: 100%;
-    height: 8rem;
-    position: relative;
-  }
-
-  #top-pc form {
-    text-align: left;
-    position: absolute;
-    left: 5.2rem;
-  }
-
-  .list-pc li {
-    display: none;
-  }
-
-  .top-mobile {
-    height: 22rem;
-    width: 100%;
-    background-color: #f8ebb9;
-    position: relative;
-  }
-
-  .list-mobile {
-    display: flex;
-    flex-direction: column;
-    background-color: #f8ebb9;
-    width: 100%;
-    padding-right: 20%;
-    text-align: center;
-  }
-  .menu img {
-    margin-left: 0.5rem;
-    width: 4rem;
-    height: 4rem;
-  }
-
-  #menu-burger img {
-    margin-top: 0.5rem;
-    margin-right: 0.5em;
-    width: 2.4rem;
-    cursor: pointer;
-  }
-
-  .loupe {
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
-    background-color: #60b100;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 8px;
-    border-radius: 50px;
-    margin-top: 1.2rem;
-    margin-right: 1rem;
-    margin-left: 11rem;
-  }
-
-  .menu ul li {
-    margin: 3rem 0.4rem;
-  }
-
-  .show {
-    display: flex;
-    align-items: center;
-  }
-
-  /* assiette */
-
-  header {
-    background-image: url(../img/champ-assiette.png);
-    width: 100%;
-    height: 50vh;
-  }
-
-  header h1 {
-    margin-top: 42%;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-shadow: 1px 1px black;
-  }
-
-  /* articles */
-
-  .top-article {
-    width: 80%;
-    margin: 1rem auto;
-    z-index: 0;
-  }
-
-  .top-recettes {
-    width: 80%;
-    margin: 1rem auto;
-  }
-
-  .top-recettes img {
-    width: 65%;
-    margin-left: 30%;
-    margin-bottom: 1rem;
-  }
-
-  .top-article h2 {
-    margin-bottom: 2rem;
-  }
-
-  .article-carpaccio {
-    display: flex;
-    width: 100%;
-    margin: 1rem auto;
-  }
-
-  .carpaccio {
-    width: 50%;
-    text-align: center;
-    height: 10rem;
-  }
-
-  .article-carpaccio img {
-    width: 90%;
-    height: 90%;
-    background-size: cover;
-    border-radius: 15px;
-    box-shadow: 1px 1px 1px black;
-    margin-left: 2rem;
-  }
-
-  .text-carpaccio {
-    font-size: 12px;
-    line-height: 1.1rem;
-    margin-right: 1rem;
-    margin-left: 2rem;
-    width: 50%;
-    margin-top: 0;
-  }
-
-  .p-carpaccio {
-    margin-bottom: 0.8rem;
-  }
-
-  .lastp-carpaccio {
-    margin-bottom: 1rem;
-  }
-
-  .text-carpaccio span {
-    font-size: 13px;
-    color: tomato;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .p-carpaccio span {
-    font-weight: bold;
-    color: white;
-  }
-
-  .article-quiche {
-    display: flex;
-    width: 100%;
-    margin: 1rem auto;
-  }
-
-  .quiche {
-    margin-left: 0;
-    width: 50%;
-    text-align: center;
-    height: 10rem;
-  }
-
-  .article-quiche img {
-    width: 85%;
-    height: 90%;
-    background-size: cover;
-    border-radius: 15px;
-    box-shadow: 1px 1px 1px black;
-    margin-right: 2rem;
-    margin-top: 57%;
-  }
-
-  .text-quiche {
-    width: 50%;
-    font-size: 12px;
-    line-height: 1.1rem;
-    margin-left: 2rem;
-  }
-
-  .p-quiche {
-    margin-bottom: 0.8rem;
-  }
-
-  .lastp-quiche {
-    margin-bottom: 1rem;
-  }
-
-  .text-quiche span {
-    font-size: 13px;
-    color: tomato;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .p-quiche span {
-    font-weight: bold;
-    color: white;
-  }
-
-  .producteurs,
-  .recettes {
-    margin: 1.2rem 1.5rem;
-  }
-
-  .bg-prod-recette {
-    width: 100%;
-    margin: 0rem auto;
-  }
-
-  button {
-    background-color: #f8ebb9;
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-    width: 10rem;
-    margin: 1 auto;
-    cursor: pointer;
-    color: #7a7a7a;
-  }
-
-  h2 {
-    margin-bottom: 1rem;
-  }
-
-  /*======footer=======*/
-
-  .top-footer {
-    width: 100%;
-    padding-left: 4rem;
-  }
-
-  .nav-footer {
-    width: 15rem;
-    margin: 2.7rem 2rem;
-  }
-
-  .nav-footer a {
-    text-decoration: none;
-    color: #7a7a7a;
-  }
-
-  .nav-footer ul {
-    list-style-type: none;
-    margin-right: 1.5rem;
-    width: 7.8rem;
-  }
-
-  .reseaux-footer {
-    text-align: center;
-  }
-
-  .fcb-insta .fab {
-    margin: 0.4rem 2rem;
-    font-size: 1.3rem;
-    color: #60b100;
-  }
-
-  .fcb-insta .fa-facebook-f {
-    font-size: 1.1rem;
-  }
+    #menu-burger {
+        display: block;
+        margin-right: 0;
+    }
+    #top-pc {
+        display: flex;
+        width: 100%;
+        height: 8rem;
+        position: relative;
+    }
+    #top-pc form {
+        text-align: left;
+        position: absolute;
+        left: 5.2rem;
+    }
+    .list-pc li {
+        display: none;
+    }
+    .top-mobile {
+        height: 22rem;
+        width: 100%;
+        background-color: #f8ebb9;
+        position: relative;
+    }
+    .list-mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: #f8ebb9;
+        width: 100%;
+        padding-right: 20%;
+        text-align: center;
+    }
+    .menu img {
+        margin-left: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    #menu-burger img {
+        margin-top: 0.5rem;
+        margin-right: 0.5em;
+        width: 2.4rem;
+        cursor: pointer;
+    }
+    .loupe {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        background-color: #60b100;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 8px;
+        border-radius: 50px;
+        margin-top: 1.2rem;
+        margin-right: 1rem;
+        margin-left: 11rem;
+    }
+    .menu ul li {
+        margin: 3rem 0.4rem;
+    }
+    .show {
+        display: flex;
+        align-items: center;
+    }
+    /* assiette */
+    header {
+        background-image: url(../img/champ-assiette.png);
+        width: 100%;
+        height: 50vh;
+    }
+    header h1 {
+        margin-top: 42%;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-shadow: 1px 1px black;
+    }
+    /* articles */
+    .top-article {
+        width: 80%;
+        margin: 1rem auto;
+        z-index: 0;
+    }
+    .top-recettes {
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .top-recettes img {
+        width: 65%;
+        margin-left: 30%;
+        margin-bottom: 1rem;
+    }
+    .top-article h2 {
+        margin-bottom: 2rem;
+    }
+    .article-carpaccio {
+        display: flex;
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .carpaccio {
+        width: 50%;
+        text-align: center;
+        height: 10rem;
+    }
+    .article-carpaccio img {
+        width: 90%;
+        height: 90%;
+        background-size: cover;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px black;
+        margin-left: 2rem;
+    }
+    .text-carpaccio {
+        font-size: 12px;
+        line-height: 1.1rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        width: 50%;
+        margin-top: 0;
+    }
+    .p-carpaccio {
+        margin-bottom: 0.8rem;
+    }
+    .lastp-carpaccio {
+        margin-bottom: 1rem;
+    }
+    .text-carpaccio span {
+        font-size: 13px;
+        color: tomato;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .p-carpaccio span {
+        font-weight: bold;
+        color: white;
+    }
+    .article-quiche {
+        display: flex;
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .quiche {
+        margin-left: 0;
+        width: 50%;
+        text-align: center;
+        height: 10rem;
+    }
+    .article-quiche img {
+        width: 85%;
+        height: 90%;
+        background-size: cover;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px black;
+        margin-right: 2rem;
+        margin-top: 57%;
+    }
+    .text-quiche {
+        width: 50%;
+        font-size: 12px;
+        line-height: 1.1rem;
+        margin-left: 2rem;
+    }
+    .p-quiche {
+        margin-bottom: 0.8rem;
+    }
+    .lastp-quiche {
+        margin-bottom: 1rem;
+    }
+    .text-quiche span {
+        font-size: 13px;
+        color: tomato;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .p-quiche span {
+        font-weight: bold;
+        color: white;
+    }
+    .producteurs,
+    .recettes {
+        margin: 1.2rem 1.5rem;
+    }
+    .bg-prod-recette {
+        width: 100%;
+        margin: 0rem auto;
+    }
+    button {
+        background-color: #f8ebb9;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        width: 10rem;
+        margin: 1 auto;
+        cursor: pointer;
+        color: #7a7a7a;
+    }
+    h2 {
+        margin-bottom: 1rem;
+    }
+    /*======footer=======*/
+    .top-footer {
+        width: 100%;
+        padding-left: 4rem;
+    }
+    .nav-footer {
+        width: 15rem;
+        margin: 2.7rem 2rem;
+    }
+    .nav-footer a {
+        text-decoration: none;
+        color: #7a7a7a;
+    }
+    .nav-footer ul {
+        list-style-type: none;
+        margin-right: 1.5rem;
+        width: 7.8rem;
+    }
+    .reseaux-footer {
+        text-align: center;
+    }
+    .fcb-insta .fab {
+        margin: 0.4rem 2rem;
+        font-size: 1.3rem;
+        color: #60b100;
+    }
+    .fcb-insta .fa-facebook-f {
+        font-size: 1.1rem;
+    }
 }
+
 
 /*==================================================================*/

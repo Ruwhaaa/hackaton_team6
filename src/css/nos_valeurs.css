@@ -1,4 +1,3 @@
-
 body {
     width: 100%;
     display: flex;
@@ -40,6 +39,7 @@ header {
 
 
 /*NOS VALEURS */
+
 
 /***** menu *****/
 
@@ -171,7 +171,9 @@ header {
     text-align: center;
 }
 
-.nv_produits > h3, .nv_produits > p, .nv_produits > img {
+.nv_produits>h3,
+.nv_produits>p,
+.nv_produits>img {
     width: 80%;
 }
 
@@ -192,7 +194,7 @@ header {
     outline: 0;
 }
 
-.nv_produits > button {
+.nv_produits>button {
     background-color: #f8ebb9;
     text-align: center;
     border-radius: 20px;
@@ -204,6 +206,7 @@ header {
 
 .nv_produits button:hover {
     color: white;
+    cursor: pointer;
 }
 
 .nv_produits p {
@@ -247,7 +250,8 @@ header {
     margin-bottom: 30px;
     width: 90%;
 }
-.producteurs > button {
+
+.producteurs>button {
     background-color: #f8ebb9;
     text-align: center;
     border-radius: 20px;
@@ -262,6 +266,7 @@ header {
 
 .producteurs button:hover {
     color: white;
+    cursor: pointer;
 }
 
 .visitez {
@@ -290,9 +295,41 @@ header {
     outline: 0;
 }
 
+.producteurs a {
+    text-decoration: none;
+    color: black;
+}
+
+.producteurs a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.nv_produits a {
+    text-decoration: none;
+    color: black;
+}
+
+.nv_produits a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.visitez a {
+    text-decoration: none;
+    color: black;
+}
+
 .btn_visitez:hover {
     color: white;
+    cursor: pointer;
 }
+
+.fcb-insta i:hover {
+    color: white;
+    cursor: pointer;
+}
+
 
 /*** footer ***/
 
@@ -330,6 +367,11 @@ footer {
     color: white;
 }
 
+.nav-footer ul li a:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .nav-footer ul {
     list-style-type: none;
     width: 10rem;
@@ -354,36 +396,31 @@ footer {
 }
 
 
-
 /*RESPONSIVE **************************************************/
 
 
 /* "Home Page" Media queries IPAD DEBUT  */
+
 @media screen and (max-width: 768px) {
     #menu-burger {
         display: block;
         height: 3rem;
         margin-right: 1.5rem;
     }
-
     #top-pc {
         display: flex;
         width: 100%;
         height: 8rem;
     }
-
     #top-pc form input {
         margin-top: 1.6rem;
     }
-
     .list-pc {
         height: 5rem;
     }
-
     .list-pc li {
         display: none;
     }
-
     .top-mobile {
         position: absolute;
         top: 79px;
@@ -392,7 +429,6 @@ footer {
         z-index: 5;
         background-color: #f8ebb9;
     }
-
     .list-mobile {
         display: flex;
         flex-direction: column;
@@ -400,28 +436,23 @@ footer {
         width: 100%;
         text-align: center;
     }
-
     .menu a:hover {
         color: white;
     }
-
     .menu img {
         margin-left: 0.5rem;
         width: 4rem;
         height: 4rem;
     }
-
     #menu-burger img {
         margin-top: 0.5rem;
         margin-right: 0.5em;
         width: 2.4rem;
         cursor: pointer;
     }
-
     .menu ul li {
         margin: 2rem 0 2rem 0;
     }
-
     .show {
         display: flex;
     }
@@ -441,10 +472,9 @@ footer {
     #hd_filtre form {
         height: 6%;
     }
-    .nv_produits > img {
+    .nv_produits>img {
         width: 60%;
     }
-
     .list-pc {
         position: absolute;
         top: 35px;
@@ -470,7 +500,6 @@ footer {
         width: 80%;
     }
     /*=====footer=======*/
-
     .nav-footer {
         width: 10rem;
     }
@@ -503,8 +532,6 @@ footer {
 
 /* HOME PAGE IPAD FIN MEDIA QUERIES  */
 
-
-
 @media screen and (min-width:1439px) {
     .logo-top {
         left: 11%;
@@ -513,49 +540,40 @@ footer {
     header {
         width: 80%;
     }
-
     .img_princ_valeurs h1 {
         font-size: 3rem;
     }
     .environnement h3 {
         margin-left: 20%;
     }
-
-    .environnement > p {
+    .environnement>p {
         width: 60%;
         margin-bottom: 100px;
         margin-left: 20%;
         text-align: start;
     }
-
     .nv_produits h3 {
         margin-left: 20%;
         width: 60%;
     }
-
-    .nv_produits > img {
+    .nv_produits>img {
         width: 80%;
     }
-
     .nv_produits p {
         width: 60%;
         margin-left: 20%;
         text-align: start;
     }
-
     .producteurs h3 {
         margin-left: 20%;
     }
-
-    .producteurs > img {
+    .producteurs>img {
         width: 60%;
     }
-
-    .producteurs > p {
+    .producteurs>p {
         margin-left: 20%;
         width: 60%;
     }
-
     .visitez p {
         margin-left: 20%;
         width: 60%;
@@ -606,9 +624,10 @@ footer {
         justify-content: space-between;
         font-size: 0.8rem;
     }
-    .reseaux-footer > p {
+    .reseaux-footer>p {
         font-size: 0.8rem;
     }
 }
+
 
 /* Fin Media queries "Page Nos Valeurs" */
