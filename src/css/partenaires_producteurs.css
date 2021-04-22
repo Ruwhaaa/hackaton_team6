@@ -6,6 +6,413 @@ body {
   background-attachment: fixed;
   font-size: 15px;
 }
+
+/*==============*/
+/*====HEADER====*/
+/*==============*/
+
+header {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  z-index: 5;
+}
+
+.menu {
+  height: 8rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f8ebb9;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  width: 100%;
+  margin-left: 4rem;
+}
+
+.menu a {
+  text-shadow: none;
+  text-decoration: none;
+  color: #60b100;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+.menu ul li {
+  margin: 3rem 2rem;
+}
+
+.logo-top img {
+  width: 5rem;
+  margin-left: 2rem;
+}
+
+.top-mobile {
+  display: none;
+}
+
+#top-pc {
+  width: 100%;
+  display: flex;
+}
+
+.list-pc {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#menu-burger {
+  display: none;
+}
+#top-pc form input {
+  background-color: transparent;
+  width: 10rem;
+  background-color: #f8ebb9;
+  border-radius: 20px;
+  padding: 0.4rem;
+  height: 2rem;
+  margin-top: 2.7em;
+  margin-right: 0.8rem;
+  display: none;
+}
+
+#top-pc form input:focus {
+  outline: none;
+}
+
+#top-pc form {
+  display: flex;
+}
+
+.loupe {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #60b100;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 8px;
+  border-radius: 50px;
+  margin-top: 1.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/*===============*/
+/*=====FOOTER====*/
+/*===============*/
+
+footer {
+  background-color: #f8ebb9;
+  font-size: 0.625rem;
+  border-top: solid 8px #60b100;
+  text-shadow: none;
+}
+
+.top-footer {
+  display: flex;
+  line-height: 2rem;
+  color: #7a7a7a;
+  padding-left: 0;
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.contact-footer img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.nav-footer {
+  margin: 2.8rem 5rem;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+.nav-footer a:hover {
+  color: white;
+}
+
+.nav-footer ul {
+  list-style-type: none;
+  margin-left: 1rem;
+  width: 10rem;
+}
+
+.reseaux-footer {
+  text-align: center;
+}
+.fcb-insta .fab {
+  margin: 0.4rem 2rem;
+  font-size: 1.3rem;
+  color: #60b100;
+}
+
+.fcb-insta .fa-facebook-f {
+  font-size: 1.1rem;
+}
+
+.fcbk-insta .fab:hover {
+  color: white;
+}
+
+/*=====================*/
+/*=======Tablette======*/
+/*=====================*/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* header */
+  header {
+    width: 100%;
+    left: 0;
+  }
+  #menu-burger {
+    display: block;
+    margin-right: 1.5rem;
+  }
+  #top-pc {
+    display: flex;
+    width: 100%;
+    height: 8rem;
+  }
+
+  #top-pc form input {
+    margin-top: 1.6rem;
+  }
+
+  .list-pc li {
+    display: none;
+  }
+
+  .top-mobile {
+    height: 22rem;
+    width: 100%;
+    background-color: #f8ebb9;
+    position: relative;
+  }
+
+  .list-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8ebb9;
+    width: 100%;
+    padding-right: 15%;
+    text-align: center;
+  }
+
+  .menu a:hover {
+    color: white;
+  }
+
+  .menu img {
+    margin-left: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #menu-burger img {
+    margin-top: 0.5rem;
+    margin-right: 0.5em;
+    width: 2.4rem;
+    cursor: pointer;
+  }
+
+  .loupe {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #60b100;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 8px;
+    border-radius: 50px;
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  .menu ul li {
+    margin: 2rem 10rem;
+  }
+
+  .show {
+    display: block;
+  }
+  /*=====footer=======*/
+
+  .top-footer {
+    display: flex;
+    line-height: 2rem;
+    color: #7a7a7a;
+    width: 100%;
+    padding-left: 30%;
+  }
+
+  .nav-footer {
+    width: 10rem;
+  }
+
+  .nav-footer a {
+    text-decoration: none;
+    color: #7a7a7a;
+  }
+
+  .nav-footer a:hover {
+    color: #7a7a7a;
+  }
+
+  .nav-footer ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  .reseaux-footer {
+    text-align: center;
+  }
+  .fcb-insta .fab {
+    margin: 0.4rem 2rem;
+    font-size: 1.3rem;
+    color: #60b100;
+  }
+  .fcb-insta .fa-facebook-f {
+    font-size: 1.1rem;
+  }
+
+  .fcbk-insta .fab:hover {
+    color: white;
+  }
+}
+
+/*===================*/
+/*======Mobile=======*/
+/*===================*/
+
+@media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    left: 0;
+  }
+
+  #menu-burger {
+    display: block;
+    margin-right: 0;
+  }
+
+  #top-pc {
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    position: relative;
+  }
+
+  #top-pc form {
+    text-align: left;
+    position: absolute;
+    left: 5.2rem;
+  }
+
+  .list-pc li {
+    display: none;
+  }
+
+  .top-mobile {
+    height: 22rem;
+    width: 100%;
+    background-color: #f8ebb9;
+    position: relative;
+  }
+
+  .list-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8ebb9;
+    width: 100%;
+    padding-right: 20%;
+    text-align: center;
+  }
+  .menu img {
+    margin-left: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #menu-burger img {
+    margin-top: 0.5rem;
+    margin-right: 0.5em;
+    width: 2.4rem;
+    cursor: pointer;
+  }
+
+  .loupe {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #60b100;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 8px;
+    border-radius: 50px;
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+    margin-left: 11rem;
+  }
+
+  .menu ul li {
+    margin: 3rem 0.4rem;
+  }
+
+  .show {
+    display: flex;
+    align-items: center;
+  }
+  /*======footer=======*/
+
+  .top-footer {
+    width: 100%;
+    padding-left: 4rem;
+  }
+
+  .nav-footer {
+    width: 15rem;
+    margin: 2.7rem 2rem;
+  }
+
+  .nav-footer a {
+    text-decoration: none;
+    color: #7a7a7a;
+  }
+
+  .nav-footer ul {
+    list-style-type: none;
+    margin-right: 1.5rem;
+    width: 7.8rem;
+  }
+
+  .reseaux-footer {
+    text-align: center;
+  }
+
+  .fcb-insta .fab {
+    margin: 0.4rem 2rem;
+    font-size: 1.3rem;
+    color: #60b100;
+  }
+
+  .fcb-insta .fa-facebook-f {
+    font-size: 1.1rem;
+  }
+}
+
+/* ================================= */
+
 .background_opacity_partenaires_producteurs {
   background: rgba(255, 255, 255, 0.15);
   width: 100%;
@@ -66,9 +473,6 @@ body {
   display: none;
 }
 .visitez_notre_site {
-  position: absolute;
-  right: 50%;
-  transform: translate(50%, -50%);
   border-radius: 20px;
   border: none;
   background-color: #f8ebb9;
@@ -76,7 +480,9 @@ body {
   width: 13rem;
   margin-top: 7vh;
   cursor: pointer;
+  margin-bottom: 20%;
 }
+
 .visitez_notre_site:focus {
   outline: 0;
 }
@@ -85,7 +491,12 @@ body {
   margin-right: 40px;
 }
 @media screen and (min-width: 445px) and (max-width: 1440px) {
-  .img_princ_nos_producteurs p {
+  header {
+    width: 100%;
+    left: 0;
+  }
+
+  .blog .img_princ_nos_producteurs p {
     left: 50%;
     transform: translateX(-50%);
   }
@@ -312,5 +723,8 @@ body {
 }
 
 .paragraphe_après_caroussel {
-  width: 80rem;
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+  height: 20rem;
 }

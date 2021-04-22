@@ -3,13 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Bio</title>
+    <title>Nos partenaires producteurs</title>
     <link rel="stylesheet" href="../css/partenaires_producteurs.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/logo-online-bio.png"
+    />
   </head>
 
   <body>
     <div class="background_opacity_partenaires_producteurs">
+      <header>
+        <!--Navigation-->
+        <nav class="menu">
+          <!-- Menu sur pc -->
+          <div id="top-pc">
+            <div class="logo-top">
+              <img src="../img/logo-online-bio.png" alt="logo online bio" />
+            </div>
+            <ul class="list-pc">
+              <li><a href="#valeurs">Nos valeurs</a></li>
+              <li><a href="#assiette">Du champ à l'assiette</a></li>
+              <li><a href="#partenaires">Nos partenaires producteurs</a></li>
+            </ul>
+            <form>
+              <input
+                type="search"
+                id="site-search"
+                name="q"
+                aria-label="Search through site content"
+                placeholder="Rechercher"
+              />
+              <div class="loupe">
+                <i class="fas fa-search"></i>
+              </div>
+            </form>
+            <div id="menu-burger">
+              <img src="../img/Menu-burger.svg" alt="logo menu burger" />
+            </div>
+          </div>
+
+          <!-- défilement du menu sur mobile/tablette -->
+
+          <div class="top-mobile">
+            <ul class="list-mobile">
+              <li><a href="#valeurs">Nos valeurs</a></li>
+              <li><a href="#produit">Vie du produit</a></li>
+              <li><a href="#partenaires">Nos partenaires</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
       <div class="marge">
         <div class="img_princ_nos_producteurs text_head">
           <p>Nos partenaires producteurs</p>
@@ -150,6 +203,36 @@
           </div>
         </section>
       </section>
+      <!-- Footer -->
+
+      <footer>
+        <div class="top-footer">
+          <div class="contact-footer">
+            <img src="../img/logo-online-bio.png" alt="logo online bio" />
+            <p>06.09.39.90.09</p>
+            <p>onlinebio.contact@gmail.com</p>
+          </div>
+          <div class="nav-footer">
+            <ul>
+              <li><a href="#valeurs"> Nos valeurs</a></li>
+              <li><a href="#assiette">Du champ à l'assiette</a></li>
+              <li><a href="#partenaires">Nos partenaires producteurs</a></li>
+              <li><a href="#mentions légales">Mentions légales</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="reseaux-footer">
+          <p>Restez en contact avec nous</p>
+          <div class="fcb-insta">
+            <a href="https://www.facebook.com/Onlinebio75/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/onlinebio_fruitetlegume/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="../js/index.js"></script>
   </body>
