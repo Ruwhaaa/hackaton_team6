@@ -1,7 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
-    background-color: #FFF9F9;
+    background-image: url("../img/bois.png");
+    background-attachment: fixed;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
 }
 
 
@@ -13,59 +32,105 @@ body {
 
 /*NOS VALEURS */
 
-.img_princ_valeurs {
-    background-image: url("../img/nos-valeurs.jpg");
+/***** menu *****/
+
+.menu {
+    height: 5rem;
+    z-index: 2;
     width: 100%;
-    height: 46vh;
+    margin: 0 auto;
+    background-color: #f8ebb9;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #60b100;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.menu ul li {
+    margin: 1.5rem 1rem;
+}
+
+.logo-top {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo-top img {
+    width: 5rem;
+    margin-left: 1%;
+}
+
+.top-mobile {
+    display: none;
+}
+
+#top-pc {
+    width: 100%;
+}
+
+.list-pc {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#menu-burger {
+    display: none;
+}
+
+#top-pc form input {
+    width: 10rem;
+    background-color: #f8ebb9;
+    border-radius: 20px;
+    padding: 0.4rem;
+    height: 2rem;
+    margin-top: 2.7em;
+    margin-right: 0.8rem;
+    border: none;
+}
+
+#top-pc form {
+    display: flex;
+}
+
+.img_princ_valeurs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/nos-valeurs.jpg");
+    width: 120%;
+    position: relative;
+    right: 10%;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    /* border-radius: 102px; */
-    border-bottom-left-radius: 18%;
-    border-bottom-right-radius: 18%;
-    /* -webkit-clip-path: circle(61% at 50% 35%);*/
-    /*clip-path: circle(61% at 50% 35%); */
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
 }
 
-section .lierre_general {
-    /* z-index: -1;
-            position: absolute;
-            height: 308%;
-            margin-left: auto;
-            margin-right: auto;
-            transform: translate(-50%, -50%);
-            left: 50%;
-            /* width: 120%; */
-    /* margin-top: 28%;
-            margin-left: 8%;
-            background-image: url('../img/Capture\ d’écran\ 2021-04-21\ à\ 20.38.26.png');
-            background-size: cover; */
-    /* width: 10%;  */
-    z-index: -1;
-    position: absolute;
-    height: 198%;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    /* width: 120%; */
-    margin-top: 28%;
-    background-image: url('../img/Capture\ d’écran\ 2021-04-21\ à\ 20.38.26.png');
-    background-size: contain;
-    width: 46%;
-    height: 246%;
-    margin-top: 204px;
-    background-repeat: no-repeat;
-}
-
-.img_princ_valeurs p {
-    position: absolute;
-    top: 45%;
-    transform: translate(50%, 50%);
+.img_princ_valeurs h1 {
     color: white;
-    font-size: 10vw;
-    right: 46%;
-    width: 207px;
+    font-size: 2rem;
+    text-shadow: 1px 1px black;
+}
+
+.gouttiere_generale {
+    overflow: hidden;
 }
 
 .environnement {
@@ -76,55 +141,56 @@ section .lierre_general {
 .environnement p {
     font-size: 15px;
     text-align: start;
-    margin-left: 6%;
-    margin-top: 4%;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 5%;
+    text-shadow: 1px 1px black;
 }
 
 .environnement h3 {
     font-size: 25px;
-    margin-left: 6%;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-left: 5%;
 }
 
 .nv_produits {
     text-align: center;
 }
 
-.nv_produits h3,
-p,
-img {
-    width: 90%;
-    margin-top: 6vh;
+.nv_produits > h3, .nv_produits > p, .nv_produits > img {
+    width: 80%;
 }
 
 .nv_produits h3 {
     font-size: 25px;
-    color: #333333;
+    color: white;
+    text-shadow: 1px 1px black;
     text-align: start;
-    margin-left: 7%;
+    margin-left: 5%;
 }
 
 .nv_produits img {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    border-radius: 31px;
-    box-shadow: 1px 2px 2px;
-}
-
-.nv_produits button {
-    position: absolute;
-    right: 50%;
-    transform: translate(50%, -50%);
-    border-radius: 20px;
-    border: none;
-    background-color: #f8ebb9;
-    height: 6vh;
-    width: 13rem;
-    margin-top: 7vh;
-    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .nv_produits button:focus {
     outline: 0;
+}
+
+.nv_produits > button {
+    background-color: #f8ebb9;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: none;
+    height: 45px;
+    width: 13rem;
 }
 
 .nv_produits button:hover {
@@ -132,10 +198,14 @@ img {
 }
 
 .nv_produits p {
-    width: 88%;
+    width: 90%;
     font-size: 15px;
     text-align: start;
-    margin-left: 6%;
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 5%;
+    text-shadow: 1px 1px black;
 }
 
 .producteurs {
@@ -146,34 +216,35 @@ img {
 .producteurs p {
     font-size: 15px;
     text-align: start;
-    margin-left: 6%;
+    margin-bottom: 30px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 5%;
+    text-shadow: 1px 1px black;
 }
 
 .producteurs h3 {
     font-size: 25px;
-    color: #333333;
+    color: white;
+    text-shadow: 1px 1px black;
     text-align: start;
-    margin-left: 7%;
+    margin-left: 5%;
 }
 
 .producteurs img {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    border-radius: 31px;
-    box-shadow: 1px 2px 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
 }
-
-.producteurs button {
-    position: absolute;
-    right: 50%;
-    transform: translate(50%, -50%);
+.producteurs > button {
+    background-color: #f8ebb9;
+    text-align: center;
     border-radius: 20px;
     border: none;
-    background-color: #f8ebb9;
-    height: 6vh;
+    height: 45px;
     width: 13rem;
-    margin-top: 7vh;
-    cursor: pointer;
 }
 
 .producteurs button:focus {
@@ -185,108 +256,171 @@ img {
 }
 
 .visitez {
-    margin-top: 18vh;
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 .visitez p {
     font-size: 15px;
-    margin-left: 6%;
+    margin-left: 5%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 5%;
+    text-shadow: 1px 1px black;
 }
 
-.visitez button {
-    position: absolute;
-    right: 50%;
-    transform: translate(50%, -50%);
-    border-radius: 20px;
-    border: none;
+.btn_visitez {
     background-color: #f8ebb9;
-    height: 6vh;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: none;
+    height: 45px;
     width: 13rem;
-    margin-top: 7vh;
-    cursor: pointer;
-}
-
-.visitez button {
     outline: 0;
 }
 
-.visitez button:hover {
+.btn_visitez:hover {
     color: white;
 }
+
+/*** footer ***/
+
+footer {
+    width: 100%;
+    background-color: #f8ebb9;
+    font-size: 0.625rem;
+    border-top: solid 8px #60b100;
+}
+
+.top-footer {
+    display: flex;
+    line-height: 2rem;
+    color: #7a7a7a;
+    padding-left: 5%;
+    width: 15rem;
+    flex-direction: column;
+}
+
+.contact-footer img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.nav-footer {
+    margin: 2.8rem 0 2.8rem 0;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+.nav-footer a:hover {
+    color: white;
+}
+
+.nav-footer ul {
+    list-style-type: none;
+    width: 10rem;
+}
+
+.reseaux-footer {
+    text-align: center;
+}
+
+.fcb-insta .fab {
+    margin: 0.4rem 0.5rem;
+    font-size: 1.3rem;
+    color: #60b100;
+}
+
+.fcb-insta .fa-facebook-f {
+    font-size: 1.1rem;
+}
+
+.fcbk-insta .fab:hover {
+    color: white;
+}
+
 
 
 /*RESPONSIVE **************************************************/
 
 
 /* "Home Page" Media queries IPAD DEBUT  */
+@media screen and (max-width: 768px) {
+    #menu-burger {
+        display: block;
+        height: 3rem;
+        margin-right: 1.5rem;
+    }
 
-@media screen and (min-width:540px) and (max-width:720px) {
-    #hd_paragraphe {
-        margin-top: -30px;
+    #top-pc {
+        display: flex;
+        width: 100%;
+        height: 8rem;
     }
-}
 
-@media screen and (min-width:540px) and (max-width:720px) {
-    #hd_filtre form img {
-        height: 1.9rem;
-        margin-left: 3vw;
+    #top-pc form input {
+        margin-top: 1.6rem;
     }
-}
 
-@media screen and (min-width:1024px) {
-    h1 {
-        font-size: 6vw;
+    .list-pc {
+        height: 5rem;
     }
-    #hd_filtre p {
-        font-size: 3vw;
+
+    .list-pc li {
+        display: none;
     }
-    #hd_filtre form {
-        height: 6vw;
-        width: 16rem;
+
+    .top-mobile {
+        position: absolute;
+        top: 79px;
+        height: 22rem;
+        width: 100%;
+        z-index: 5;
+        background-color: #f8ebb9;
     }
-    #hd_filtre form img {
-        height: 2.9rem;
-        margin-left: -38px;
-    }
-    #hd_filtre input {
-        font-size: 20px;
-        margin-left: -2vw;
-    }
-    main p:nth-child(-n+4) {
-        text-align: start;
-        margin-left: auto;
-        margin-right: auto;
+
+    .list-mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: #f8ebb9;
+        width: 100%;
         text-align: center;
     }
-    #hd_paragraphe {
-        font-size: 20px;
+
+    .menu a:hover {
+        color: white;
     }
-    #mn_search button {
-        width: 16rem;
-        height: 6vw;
+
+    .menu img {
+        margin-left: 0.5rem;
+        width: 4rem;
+        height: 4rem;
     }
-    #mn_search a {
-        font-size: 18px;
+
+    #menu-burger img {
+        margin-top: 0.5rem;
+        margin-right: 0.5em;
+        width: 2.4rem;
+        cursor: pointer;
+    }
+
+    .menu ul li {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .show {
+        display: flex;
     }
 }
 
-@media screen and (min-width:768px) {
-    h1 {
-        font-size: 301%;
-        width: 85%;
-    }
+@media screen and (min-width:769px) {
     #hd_paragraphe {
         margin-top: -1%;
-    }
-    main p:nth-child(2) {
-        padding-top: 0;
-    }
-    main p:nth-child(-n+6) {
-        text-align: start;
-        margin-left: 5%;
-        margin-top: 0;
-        padding-top: 0;
-        width: 67%;
     }
     #mn_search button {
         top: 90%;
@@ -295,15 +429,65 @@ img {
     #hd_filtre p {
         font-size: 161%;
     }
-    .hd_main_image {
-        height: 78vh;
-    }
     #hd_filtre form {
         height: 6%;
-        bottom: 9rem;
     }
-    #hd_filtre form img {
+    .nv_produits > img {
+        width: 60%;
+    }
+
+    .list-pc {
+        position: absolute;
+        top: 35px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    #top-pc {
+        display: flex;
+        justify-content: center;
+    }
+    .logo-top {
+        position: absolute;
+        left: 10px;
+        height: 7rem;
+    }
+    #top-pc {
+        height: 8rem;
+    }
+    header>.menu {
+        height: 8rem;
+    }
+    .menu ul {
+        width: 80%;
+    }
+    /*=====footer=======*/
+
+    .nav-footer {
+        width: 10rem;
+    }
+    .nav-footer a {
+        text-decoration: none;
+        color: #7a7a7a;
+    }
+    .nav-footer a:hover {
+        color: #7a7a7a;
+    }
+    .nav-footer ul {
+        list-style-type: none;
         margin-left: 0;
+    }
+    .reseaux-footer {
+        text-align: center;
+    }
+    .fcb-insta .fab {
+        font-size: 1.3rem;
+        color: #60b100;
+    }
+    .fcb-insta .fa-facebook-f {
+        font-size: 1.1rem;
+    }
+    .fcbk-insta .fab:hover {
+        color: white;
     }
 }
 
@@ -311,183 +495,71 @@ img {
 /* HOME PAGE IPAD FIN MEDIA QUERIES  */
 
 
-/*HOME PAGE LAPTOP DEBUT MEDIA QUERIES 1140PX*/
 
-@media screen and (min-width:1440px) {
-    h1 {
-        font-size: 5vw;
-        width: 83vw;
-        margin-left: 7%;
+@media screen and (min-width:1439px) {
+    .logo-top {
+        left: 11%;
+        height: 7rem;
     }
-    .gouttiere_generale {
-        margin-left: 10%;
-        margin-right: 10%
+    header {
+        width: 80%;
     }
-    .hd_main_image {
-        clip-path: none;
-        border-bottom-left-radius: 18%;
-        border-bottom-right-radius: 18%;
-        height: 78vh;
+
+    .img_princ_valeurs h1 {
+        font-size: 3rem;
     }
-    #hd_filtre {
-        border-bottom-left-radius: 18%;
-        border-bottom-right-radius: 18%;
+    .environnement h3 {
+        margin-left: 20%;
     }
-    #hd_filtre p {
-        font-size: 2vw;
-        width: 47vw;
-        top: 38vw;
-        margin-left: 7%;
+
+    .environnement > p {
+        width: 60%;
+        margin-bottom: 100px;
+        margin-left: 20%;
+        text-align: start;
     }
-    #hd_filtre form {
-        position: absolute;
-        right: 20vw;
-        top: 35.3vw;
-        height: 5vw;
+
+    .nv_produits h3 {
+        margin-left: 20%;
+        width: 60%;
     }
-    #hd_filtre form img {
-        margin-top: 5px;
+
+    .nv_produits > img {
+        width: 80%;
     }
-    #hd_paragraphe {
-        margin-top: 53px;
-        font-size: 27px;
-        margin-left: 7%;
+
+    .nv_produits p {
+        width: 60%;
+        margin-left: 20%;
+        text-align: start;
     }
-    #mn_search button {
-        margin-top: 120px;
+
+    .producteurs h3 {
+        margin-left: 20%;
     }
-    #mn_search a {
-        font-size: 23px;
-        letter-spacing: 3px;
+
+    .producteurs > img {
+        width: 60%;
+    }
+
+    .producteurs > p {
+        margin-left: 20%;
+        width: 60%;
+    }
+
+    .visitez p {
+        margin-left: 20%;
+        width: 60%;
+        font-size: 1.2rem;
     }
 }
 
 
 /* Début Media queries "Page Nos Valeurs"  */
 
-@media screen and (min-width:0) and (max-width:540px) {
-    .img_princ_valeurs {
-        width: 100%;
-        height: 61vh;
-        margin-top: -14px;
-    }
-    .img_princ_valeurs p {
-        width: 317px;
-        text-align: center;
-        top: 50%;
-    }
-}
-
-@media screen and (min-width:541px) and (max-width:720px) {
-    .img_princ_valeurs {
-        clip-path: none;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
-    }
-    .img_princ_valeurs p {
-        right: 47%;
-        width: 53%;
-        text-align: center;
-        top: 53%;
-    }
-}
-
-@media screen and (min-width:721px) and (max-width:960px) {
-    .img_princ_valeurs {
-        width: 100%;
-        height: 56vh;
-        height: 56vh;
-    }
-    .img_princ_valeurs p {
-        top: 50%;
-        width: 74%;
-        /* width: 95%; */
-        right: 37%;
-    }
-}
-
-@media screen and (min-width:960px) and (max-width:1140px) {
-    .img_princ_valeurs {
-        width: 100%;
-        height: 44vh;
-    }
-    .img_princ_valeurs p {
-        top: 53%;
-        right: 45%;
-        width: 77%;
-    }
-}
-
-@media screen and (min-width:961px) {
-    .img_princ_valeurs {
-        width: 100%;
-        height: 55vh;
-    }
-    .img_princ_valeurs p {
-        top: 53%;
-        right: 45%;
-        width: 77%;
-    }
-}
-
-
-/* MEDIA QUERIES HOME PAGE IPAD */
-
-@media screen and (min-width:1024px) {
-    .img_princ_valeurs p {
-        position: absolute;
-        top: 51%;
-        transform: translate(50%, 50%);
-        color: white;
-        font-size: 10vw;
-        right: 46%;
-        width: 77%;
-    }
-}
-
-@media screen and (min-width:1100px) {
-    .img_princ_valeurs {
-        width: 100%;
-        height: 62vh;
-    }
-    .img_princ_valeurs p {
-        top: 53%;
-        right: 45%;
-        width: 77%;
-    }
-}
-
-@media screen and (min-width:1230px) {
-    .img_princ_valeurs {
-        width: 100%;
-        height: 74vh;
-    }
-    .img_princ_valeurs p {
-        top: 53%;
-        right: 45%;
-        width: 77%;
-    }
-}
-
 @media screen and (min-width:1300px) {
-    .img_princ_valeurs {
-        width: 100%;
-        height: 83vh;
-    }
-    .img_princ_valeurs p {
-        top: 53%;
-        right: 45%;
-        width: 77%;
-    }
-    .img_princ_valeurs {
-        margin-top: -19%;
-    }
-    .marge_contenu {
-        margin-left: 10%;
-        margin-right: 10%
-    }
     .environnement p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .environnement h3 {
         font-size: 1.6rem;
@@ -499,108 +571,35 @@ img {
         width: 56.3rem;
     }
     .nv_produits p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .producteurs h3 {
         font-size: 1.6rem;
     }
-    .nv_produits button {
-        font-size: 1.1rem;
-    }
-    .producteurs img {
-        width: 56.3rem;
-    }
     .producteurs p {
-        font-size: 1.3rem;
-    }
-    .producteurs button {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .visitez p {
-        font-size: 1.1rem;
-    }
-    .visitez button {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 
-
-/* MEDIA QUERIES IPHONE 6/7/8 PLUS */
-
-@media screen and (min-width:414px) {
-    #hd_paragraphe {
-        width: 89%;
-        margin-top: -21%;
+@media screen and (min-width:1023px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    #hd_filtre p {
-        left: 11%;
+    .top-footer {
+        width: 30%;
+        padding-left: 0%;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.8rem;
     }
-    h1 {
-        margin-left: 6%;
-    }
-    #hd_filtre form {
-        bottom: 8rem;
-    }
-    .img_princ_valeurs p {
-        font-size: 4rem;
-        text-align: center;
-        top: 80%;
+    .reseaux-footer > p {
+        font-size: 0.8rem;
     }
 }
-
-
-/* MEDIA QUERIES IPHONE X */
-
-@media screen and (min-width:375px) {
-    h1 {
-        width: 86%;
-        font-size: 168%;
-    }
-    #hd_filtre form {
-        bottom: 8rem;
-    }
-    #hd_paragraphe {
-        margin-top: -81px;
-        margin-left: 8%;
-    }
-    #hd_filtre p {
-        left: 12%;
-    }
-}
-
-@media screen and (min-width:390px) {
-    section .lierre_general {
-        /* z-index: -1;
-        position: absolute;
-        height: 198%;
-        margin-left: auto;
-        margin-right: auto;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        /* width: 120%; */
-        /* margin-top: 28%;
-        background-image: url('../img/Capture\ d’écran\ 2021-04-21\ à\ 20.38.26.png');
-        background-size: contain;
-        width: 46%;
-        height: 246%;
-        margin-top: 204px;
-        margin-left: 10%;
-        background-repeat: no-repeat;  */
-        /* width: 10%; */
-        z-index: -1;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        background-image: url('../img/Capture\ d’écran\ 2021-04-21\ à\ 20.38.26.png');
-        background-size: contain;
-        width: 106%;
-        height: 196%;
-        margin-top: 114%;
-        background-repeat: no-repeat;
-    }
-}
-
 
 /* Fin Media queries "Page Nos Valeurs" */
