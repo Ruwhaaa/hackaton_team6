@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/bois.png');
+    color: white;
+    background-attachment: fixed;
+}
+
+.background_opacity_mentions_legales {
+    background: rgba(255, 255, 255, 0.15);
+    width: 100%;
+    height: 100%;
+}
+
+.opacity_text {
+    text-shadow: 1px 1px black;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    border: none;
+}
+
+.img_princ_mentions_legales {
+    /* position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/markus-spiske-71uUjIt3cIs-unsplash.jpg');
+    background-size: cover; */
+    position: relative;
+    width: 100%;
+    height: 59vh;
+    background-image: url('../img/markus-spiske-71uUjIt3cIs-unsplash.jpg');
+    background-size: cover;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.img_princ_mentions_legales img {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.img_princ_mentions_legales p {
+    color: white;
+    font-size: 35px;
+    bottom: 13%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.mentions_legales p {
+    padding: 15px;
+}
+
+.mentions_legales p:nth-child(1) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(2) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(3) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(4) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(5) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(6) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(6) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(7) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(8) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(9) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(10) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(11) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(12) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(13) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(14) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(15) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(16) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(17) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(18) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(19) {
+    margin-top: 10%;
+}
+
+.mentions_legales p:nth-child(20) {
+    margin-top: 10%;
+}
+
+.justify_under_main_image {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media screen and (min-width:1440px) {
+    .justify_under_main_image {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .img_princ_mentions_legales {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .img_princ_mentions_legales p {
+        width: 71%;
+    }
+    .mentions_legales p:nth-child(-n+20) {
+        margin-top: 3%;
+    }
+    .marge_first_image {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .img_princ_mentions_legales {
+        border-bottom-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+}
