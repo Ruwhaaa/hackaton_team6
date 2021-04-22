@@ -111,6 +111,10 @@ body {
     margin-right: 8%;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+}
 @media screen and (min-width: 1024px) {
   .partenaire_text p {
     font-size: 3vw;
