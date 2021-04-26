@@ -20,8 +20,6 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-image: url("../img/bois.png");
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     width: 100%;
